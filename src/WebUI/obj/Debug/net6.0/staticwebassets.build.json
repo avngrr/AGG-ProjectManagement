@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uVafOBiyiDGv3Gq9lQAHoQZDo7B+GlZNMqsA7g4Sh+o=",
+  "Hash": "tKXUbaWOfCl12j5fqIO0LMTQ6cFGVxv21IFuO9hnAf0=",
   "Source": "WebUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -389,6 +389,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\mediatr\\10.0.1\\lib\\netstandard2.1\\MediatR.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MediatR.Extensions.Microsoft.DependencyInjection.dll",
+      "SourceId": "WebUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\lib\\netstandard2.1\\MediatR.Extensions.Microsoft.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -5676,6 +5693,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\obj\\Debug\\net6.0\\build-gz\\JAWF0cS8.gz",
+      "SourceId": "WebUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MediatR.Extensions.Microsoft.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MediatR.Extensions.Microsoft.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MediatR.Extensions.Microsoft.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\obj\\Debug\\net6.0\\build-gz\\jEqtBhCg.gz",

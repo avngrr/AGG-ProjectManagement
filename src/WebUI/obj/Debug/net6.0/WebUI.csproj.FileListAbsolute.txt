@@ -893,3 +893,7 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\MediatR.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\ZMOLIolM.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\0HS9Uijb.gz
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\MediatR.Extensions.Microsoft.DependencyInjection.dll.gz
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\JAWF0cS8.gz

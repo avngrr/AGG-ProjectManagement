@@ -16,6 +16,7 @@
       "LanguageExt.Core.dll": "sha256-oknGBC6EN6KDsTMwNuEymyj9TYIo5vTD3iFI2lr4NFk=",
       "MediatR.dll": "sha256-5JP3MguhkAHQ+bz8WyGxc8bqkRX2InbWKVplJEsFzGQ=",
       "MediatR.Contracts.dll": "sha256-jbWZnge7bolAMw8ppWQLC7bKPAY6DjkJn2ezN9OXafU=",
+      "MediatR.Extensions.Microsoft.DependencyInjection.dll": "sha256-blkFqVBGqO7GrdhrAXsMHPTRmzPouRK2+2BV\/23QKbc=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-34F+BnSts\/TON8s8cSZc6roVw6IntMd\/sTrN8WOXiy8=",
       "Microsoft.AspNetCore.Components.dll": "sha256-F+JMphRzIMZdciqr5Yf8CXeTA11n\/doTnAdObTPxNm8=",
       "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-51ABG+tb1xLWFq1hj1MAunwXoekTaXPQsH7FsX1FksM=",
@@ -215,17 +216,17 @@
       "mscorlib.dll": "sha256-Q4A\/043fz702a7DDbm+JAtMHV3jKAZ9k8khztTMKp2M=",
       "netstandard.dll": "sha256-W9cwgVmBZsddVw3WVFMC5Gya92UufvbVTNR4+u7pnR0=",
       "System.Private.CoreLib.dll": "sha256-KVnZkFos\/ML\/3S2isVijfmFZXO4zEQeCga6BZvGdTbY=",
-      "Application.dll": "sha256-dJKWytuuVkRNd\/S\/zYGoXT8Srt9In6ernX4EDWKjCYo=",
-      "Domain.dll": "sha256-LGQjCXIXH\/aDnY2liZo2+kJHDkGaG6kWcZgbXP7k1e8=",
-      "WebUI.dll": "sha256-bZ02RcJlmuC0LSzBv2RopU1YsmzuNXTN3gFD\/2hCKBM="
+      "Application.dll": "sha256-W8MR2yD9\/e1lLoM9p1D4Q60cfHSod9neL+wqrt+wp8o=",
+      "Domain.dll": "sha256-YJL6UZ\/lXNcKj4rD3SHT2totBZfLcbV3vRrvQZQLImY=",
+      "WebUI.dll": "sha256-BqqEZLrf4pWeIGQFillxYiwJY+tAfGqtdNDqjJh2NiY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Application.pdb": "sha256-FkIMvpnLwQ6t8E8pL29Bi04MnaAF5KxrvQhMIhU2Wcc=",
-      "Domain.pdb": "sha256-OjYO36vl66bvV\/w9xPbzu1gpNtyy+xsXlmCu1hnzi5k=",
-      "WebUI.pdb": "sha256-QZ6jdyj3Zm\/pXuJa83JZcHOSfrXL3DbRyFDm1WIwfBI="
+      "Application.pdb": "sha256-hHeCkrIcuILpCEb\/MjcDnCT\/OvQ5g1xlmQ+lMcKBzAM=",
+      "Domain.pdb": "sha256-VdlRNE93SxR5R1Awcetjn4RjZyF5DzrrH2nrrb0Cg78=",
+      "WebUI.pdb": "sha256-Y3\/0pvn1EP06XKcVZ7BL05J8EmedwvOKqUf3vmLM9HY="
     },
     "runtime": {
       "dotnet.6.0.4.5ho74aq8ef.js": "sha256-WYno\/cK5MDsl5yi4T\/\/QgUskbBfhLL77i+c0uKzO9+c=",

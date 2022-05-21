@@ -6,21 +6,21 @@ using MediatR;
 
 namespace Application.Projects.Queries;
 
-public class GetAllProjectsCommand : IRequest<List<ProjectResponse>>
+public class GetAllProjectsQuery : IRequest<List<ProjectResponse>>
 {
 
 }
 
-internal class GetAllProjectsCommandHandler : IRequestHandler<GetAllProjectsCommand, List<ProjectResponse>>
+internal class GetAllProjectsQueryHandler : IRequestHandler<GetAllProjectsQuery, List<ProjectResponse>>
 {
     private readonly IRepository<Project, int> _repository;
     private readonly IMapper _mapper;
-    public GetAllProjectsCommandHandler(IRepository<Project, int> repository, IMapper mapper)
+    public GetAllProjectsQueryHandler(IRepository<Project, int> repository, IMapper mapper)
     {
         _repository = repository;
         _mapper = mapper;
     }
-    public async Task<List<ProjectResponse>> Handle(GetAllProjectsCommand request, CancellationToken cancellationToken)
+    public async Task<List<ProjectResponse>> Handle(GetAllProjectsQuery request, CancellationToken cancellationToken)
     {
         var projects = await _repository.GetAllAsync();
         var mappedProjects = _mapper.Map<List<ProjectResponse>>(projects);

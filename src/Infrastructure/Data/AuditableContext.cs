@@ -16,7 +16,7 @@ public class AuditableContext : ApiAuthorizationDbContext<ApplicationUser>, IApp
     {
     }
     public DbSet<Audit> Audits { get; set; }
-    public virtual async Task<int> SaveChangesAsync(string userId = null, CancellationToken cancellationToken = new())
+    public virtual async Task<int> SaveChangesAsync(string userId, CancellationToken cancellationToken = new())
     {
         OnBeforeSaveChanges(userId);
         var result = await base.SaveChangesAsync();
@@ -36,6 +36,10 @@ public class AuditableContext : ApiAuthorizationDbContext<ApplicationUser>, IApp
             foreach (var property in entry.Properties)
             {
                 string propertyName = property.Metadata.Name;
+                if (propertyName is "LastModifiedOn" or "LastModifiedBy")
+                {
+                    continue;
+                }
                 if (property.Metadata.IsPrimaryKey())
                 {
                     auditEntry.KeyValues[propertyName] = property.CurrentValue;

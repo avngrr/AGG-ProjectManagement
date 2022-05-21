@@ -45,7 +45,7 @@ internal class AddEditProjectCommandHandler : IRequestHandler<AddEditProjectComm
             project.Description = request.Description;
             project.StartDate = request.StartDate;
             project.ProjectManagerId = request.ProjectManagerId;
-            project.UserIds = request.UserIds;
+            project.UserIds = request.UserIds.SequenceEqual(project.UserIds) ? project.UserIds : request.UserIds;
             await _repository.UpdateAsync(project);
             await _repository.Save();
             return 0;
