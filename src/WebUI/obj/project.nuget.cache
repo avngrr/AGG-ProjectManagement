@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0IOqQwPW06e6E/RPhOO0vgzSVAeAGg+qzftHU+qwrucFXu3k1BX08/2tb1eC4xnR7zN1A/8ObOW8OYa6Mdfnuw==",
+  "dgSpecHash": "qUHdeHkgxZ+HOHPq94pR3zg+u/4BDPex7kI6SpkB9qen0kEdfsY2ynACXpZMlpVVOGb3wJwdrNDJsLv/3P9wIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Enzo\\.nuget\\packages\\languageext.core\\4.1.0\\languageext.core.4.1.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.4\\microsoft.aspnetcore.authorization.6.0.4.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.4\\microsoft.aspnetcore.components.6.0.4.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.4\\microsoft.aspnetcore.components.analyzers.6.0.4.nupkg.sha512",

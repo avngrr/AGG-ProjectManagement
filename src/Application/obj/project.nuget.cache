@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Gq7akuJZuIV208rbx9hoJa+LHj6HZGBvTLWZGMn7Ct56hEOhqtV96dN31qb3CUHdB5x+VEBzCTCLQ1O2TXFDQg==",
+  "dgSpecHash": "vhEcKsJUO35Zhr+/MLuSx0AzQfvMN8sHVaCqIvWMwBQ2afWu6NqeUxQBJ5S6FTJ36akwRS2mpoEP1m4n1FOyyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Enzo\\.nuget\\packages\\languageext.core\\4.1.0\\languageext.core.4.1.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",

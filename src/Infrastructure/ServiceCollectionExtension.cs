@@ -59,7 +59,7 @@ public static class ServiceCollectionExtension
         });
         return services;
     }
-    internal static IServiceCollection AddApplicationServices(this IServiceCollection services)
+    internal static IServiceCollection AddServerServices(this IServiceCollection services)
     {
         services.AddTransient<IAuthService, AuthService>();
         services.AddTransient<IUserService, UserService>();

@@ -4,6 +4,7 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220521100418_AddProjectsAndTickets")]
+    partial class AddProjectsAndTickets
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -393,23 +395,6 @@ namespace Infrastructure.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "0b700e63-780c-488a-bd56-de61403d5a0f",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "4ee368f2-f9e0-44fa-96e4-0afaeb1689cf",
-                            Email = "admin@gmail.com",
-                            EmailConfirmed = true,
-                            IsActive = true,
-                            LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAENEV/kdm4IQdeEbhQ1V6vzS9vrrvWVQtkCg7SyP9DwxhC3xZcBT8ibA5aFZk1Ylz9Q==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "9e0e2462-371a-41a8-9d96-a8bafa7af174",
-                            TwoFactorEnabled = false,
-                            UserName = "Admin"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -437,29 +422,6 @@ namespace Infrastructure.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "f073ed4d-6b92-411d-bcca-1911b4ccd365",
-                            ConcurrencyStamp = "1",
-                            Name = "Admin",
-                            NormalizedName = "Admin"
-                        },
-                        new
-                        {
-                            Id = "50df68f2-75fc-4773-aec0-e1b7fd0749ff",
-                            ConcurrencyStamp = "2",
-                            Name = "Developer",
-                            NormalizedName = "Developer"
-                        },
-                        new
-                        {
-                            Id = "16cc9f16-3765-45b0-ba3d-eb5cecd51fed",
-                            ConcurrencyStamp = "3",
-                            Name = "Basic",
-                            NormalizedName = "Basic"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -485,92 +447,6 @@ namespace Infrastructure.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetRoleClaims", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 13,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Users.Create",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Users.View",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Users.Edit",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Users.Delete",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Roles.Create",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Roles.View",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Roles.Edit",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Roles.Delete",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Projects.Create",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Projects.View",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Projects.Edit",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            ClaimType = "Permission",
-                            ClaimValue = "Permissions.Projects.Delete",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -633,13 +509,6 @@ namespace Infrastructure.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "0b700e63-780c-488a-bd56-de61403d5a0f",
-                            RoleId = "f073ed4d-6b92-411d-bcca-1911b4ccd365"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

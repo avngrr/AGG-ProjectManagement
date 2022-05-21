@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Infrastructure.Controllers.v1.Projects;
 
 [ApiController]
+[Route("api/[controller]")]
 [ApiVersion("1.0")]
 public class ProjectController : BaseController
 {

@@ -12,12 +12,12 @@ builder.Services.AddDbContext<IApplicationDbContext, ApplicationDbContext>(optio
 builder.Services.AddDatabaseDeveloperPageExceptionFilter()
     .AddSwagger()
     .AddApplicationServices()
-    .AddApplicationMappings()
+    .AddServerServices()
+    .AddRepositories()
     .AddInfrastructureMappings()
     .AddIdentity()
     .AddJwtSettings(builder.Configuration)
     .AddAuthorizationPermissions()
-    .AddMediatR(Assembly.GetExecutingAssembly())
     .AddVersioning()
     .AddControllersWithViews();
 builder.Services.AddCors(options =>
