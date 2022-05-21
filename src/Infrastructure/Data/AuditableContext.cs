@@ -16,7 +16,7 @@ public class AuditableContext : ApiAuthorizationDbContext<ApplicationUser>, IApp
     {
     }
     public DbSet<Audit> Audits { get; set; }
-    public virtual async Task<int> SaveChangesAsync(string userId = null)
+    public virtual async Task<int> SaveChangesAsync(string userId = null, CancellationToken cancellationToken = new())
     {
         OnBeforeSaveChanges(userId);
         var result = await base.SaveChangesAsync();

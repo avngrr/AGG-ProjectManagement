@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using System.Security.Claims;
+using System.Text.Json;
+using Domain.Entities;
 using Domain.Entities.Projects;
 using Duende.IdentityServer.EntityFramework.Options;
 using Infrastructure.Data.Seed;
@@ -9,8 +11,10 @@ namespace Infrastructure.Data;
 
 public class ApplicationDbContext : AuditableContext
 {
-    public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
+    private readonly string _userId;
+    public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions, IHttpContextAccessor _accessor) : base(options, operationalStoreOptions)
     {
+        _userId = _accessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
     }
     public DbSet<Project> Projects { get; set; }
     public DbSet<Ticket> Tickets { get; set; }
@@ -37,5 +41,25 @@ public class ApplicationDbContext : AuditableContext
                     s => JsonSerializer.Deserialize<List<string>>(s, new JsonSerializerOptions()));
         });
         builder.AddDefaultUsersRoles();
+    }
+
+    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
+    {
+        foreach (var entry in ChangeTracker.Entries<AuditableEntity<int>>().ToList())
+        {
+            switch (entry.State)
+            {
+                case EntityState.Added:
+                    entry.Entity.CreatedOn = DateTime.UtcNow;
+                    entry.Entity.CreatedBy = _userId;
+                    break;
+
+                case EntityState.Modified:
+                    entry.Entity.LastModifiedOn = DateTime.UtcNow;
+                    entry.Entity.LastModifiedBy = _userId;
+                    break;
+            }
+        }
+        return await base.SaveChangesAsync(_userId, cancellationToken);
     }
 }

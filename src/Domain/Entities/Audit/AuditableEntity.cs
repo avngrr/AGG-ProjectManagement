@@ -2,7 +2,7 @@
 
 public abstract class AuditableEntity<TId>
 {
-    public TId Id;
+    public TId Id { get; set; }
     public string CreatedBy { get; set; }
     public DateTime CreatedOn { get; set; }
     public string LastModifiedBy { get; set; }

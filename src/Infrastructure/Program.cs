@@ -16,6 +16,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter()
     .AddRepositories()
     .AddInfrastructureMappings()
     .AddIdentity()
+    .AddHttpContextAccessor()
     .AddJwtSettings(builder.Configuration)
     .AddAuthorizationPermissions()
     .AddVersioning()
@@ -52,6 +53,5 @@ app.UseCors("_myAllowSpecificOrigins");
 app.UseAuthorization();
 app.UseAuthentication();
 app.MapControllers();
-
 app.Run();
 public partial class Program { }

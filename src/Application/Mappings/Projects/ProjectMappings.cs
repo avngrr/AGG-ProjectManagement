@@ -1,4 +1,5 @@
-﻿using Application.Projects.Responses;
+﻿using Application.Projects.Commands;
+using Application.Projects.Responses;
 using AutoMapper;
 using Domain.Entities.Projects;
 
@@ -16,5 +17,6 @@ public class ProjectMappings : Profile
             .ForMember(dest
                 => dest.Tickets, opt =>
                 opt.MapFrom(src => src.Tickets)).ReverseMap();
+        CreateMap<AddEditProjectCommand, Project>();
     }
 }

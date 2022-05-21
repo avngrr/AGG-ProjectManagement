@@ -1,4 +1,5 @@
-﻿using Application.Common.Interfaces.Repository;
+﻿using System.Security.Claims;
+using Application.Common.Interfaces.Repository;
 using Domain.Entities;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -9,10 +10,12 @@ public class Repository<T, TId> : IRepository<T, TId> where T : AuditableEntity<
 {
     private readonly ApplicationDbContext _context;
     private DbSet<T> _table;
-    public Repository(ApplicationDbContext context)
+    private string _userId;
+    public Repository(ApplicationDbContext context, IHttpContextAccessor  _accessor)
     {
         _context = context;
         _table = _context.Set<T>();
+        _userId = _accessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
     }
 
     public async Task<T> GetByIdAsync(object id)
@@ -41,5 +44,10 @@ public class Repository<T, TId> : IRepository<T, TId> where T : AuditableEntity<
     {
         _table.Remove(entity);
         return Task.CompletedTask;
+    }
+
+    public async Task Save()
+    {
+        await _context.SaveChangesAsync();
     }
 }
