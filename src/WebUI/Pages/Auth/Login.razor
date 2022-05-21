@@ -1,0 +1,37 @@
+﻿@page "/login"
+@attribute [AllowAnonymous]
+@layout MainLayout
+
+<EditForm Model="@_loginCommand" OnValidSubmit="SubmitAsync">
+    <MudGrid>
+        <MudItem xs="12">
+            <div class="d-flex justify-center">
+                AGG
+            </div>
+        </MudItem>
+        <DataAnnotationsValidator />
+        <MudItem xs="12">
+            <div class="d-flex justify-center">
+                <MudText Typo="Typo.h4">Login</MudText> 
+            </div>
+        </MudItem>
+        <MudItem xs="12">
+            <div class="d-flex justify-center">
+                <MudText>Don't have an account? <MudLink Href="/register">Register here</MudLink></MudText> 
+            </div>
+        </MudItem>
+        <MudItem xs="12">
+            <MudTextField T="string" Label="Username" Variant="Variant.Outlined" @bind-Value="_loginCommand.UserName" For="@(() => _loginCommand.UserName)" />
+        </MudItem>
+        <MudItem xs="12">
+            <MudTextField Label="Password" Variant="Variant.Outlined" @bind-Value="_loginCommand.Password" For="@(() => _loginCommand.Password)" 
+                          InputType="@_passwordInput" Adornment="Adornment.End" AdornmentIcon="@_passwordInputIcon" OnAdornmentClick="TogglePasswordVisibility" />
+        </MudItem>
+        <MudItem xs="12" Class="d-flex justify-space-between align-center">
+            <MudCheckBox T="bool" Label="Remember me?" Color="Color.Primary" @bind-Checked="_loginCommand.RememberMe" For="@(() => _loginCommand.RememberMe)" Class="ml-n1"></MudCheckBox> <MudLink Href="/account/forgot-password">Forgot password?</MudLink>
+        </MudItem>
+        <MudItem xs="12" Class="d-flex justify-center">
+            <MudButton  ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" Style="width: 100%;">Sign in</MudButton>
+        </MudItem>
+    </MudGrid>
+</EditForm>
