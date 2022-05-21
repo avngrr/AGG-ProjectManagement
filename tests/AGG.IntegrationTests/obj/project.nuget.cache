@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E3r8vgK9e8mg0V4LDZFyuKiOsygzvkAbjGJA7r071hzQERhPnS5PL3fRmNhP2ZpxG9nmZdOU6E5G92vOlhCviA==",
+  "dgSpecHash": "LK08cxYmWIROnY7kSDL0eIZeu4v8E+nNVLN4K2lMKkpGSt/XsPC2GMZWGZ/Mz22XuhYj6Fj0aHyKClgEJli+bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\tests\\AGG.IntegrationTests\\AGG.IntegrationTests.csproj",
+  "projectFilePath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\tests\\AGG.IntegrationTests\\AGG.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
