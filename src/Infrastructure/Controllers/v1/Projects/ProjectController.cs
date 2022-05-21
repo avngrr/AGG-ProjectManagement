@@ -35,27 +35,27 @@ public class ProjectController : BaseController
     public async Task<IActionResult> Post(AddEditProjectCommand command)
     {
         var result = await _mediator.Send(command);
-        return result.IsSuccess ? Ok() : NotFound(result.Value);
+        return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
     [HttpPost("complete")]
     public async Task<IActionResult> Post(CompleteProjectCommand command)
     {
         var result = await _mediator.Send(command);
-        return result.IsSuccess ? Ok() : BadRequest(result.Value);
+        return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
     [HttpPost("reset")]
     public async Task<IActionResult> Post(ResetCompleteCommand command)
     {
         var result = await _mediator.Send(command);
-        return result.IsSuccess ? Ok() : NotFound(result.Value);
+        return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Delete)]
     [HttpDelete]
     public async Task<IActionResult> Post(DeleteProjectCommand command)
     {
         var result = await _mediator.Send(command);
-        return result.IsSuccess ? Ok() : NotFound(result.Value);
+        return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
 }
