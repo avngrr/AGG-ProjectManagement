@@ -28,30 +28,34 @@ public class ProjectController : BaseController
     public async Task<IActionResult> GetById(int projectId)
     {
         var result = await _mediator.Send(new GetByIdProjectsQuery() { Id = projectId });
-        return Ok(result);
+        return result.Match<IActionResult>(Ok, NotFound);
     }
     [Authorize(Policy = Permissions.Projects.Create)]
     [HttpPost]
     public async Task<IActionResult> Post(AddEditProjectCommand command)
     {
-        return Ok(await _mediator.Send(command));
+        var result = await _mediator.Send(command);
+        return result.IsSuccess ? Ok() : NotFound(result.Value);
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
     [HttpPost("complete")]
     public async Task<IActionResult> Post(CompleteProjectCommand command)
     {
-        return Ok(await _mediator.Send(command));
+        var result = await _mediator.Send(command);
+        return result.IsSuccess ? Ok() : BadRequest(result.Value);
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
     [HttpPost("reset")]
     public async Task<IActionResult> Post(ResetCompleteCommand command)
     {
-        return Ok(await _mediator.Send(command));
+        var result = await _mediator.Send(command);
+        return result.IsSuccess ? Ok() : NotFound(result.Value);
     }
     [Authorize(Policy = Permissions.Projects.Delete)]
     [HttpDelete]
     public async Task<IActionResult> Post(DeleteProjectCommand command)
     {
-        return Ok(await _mediator.Send(command));
+        var result = await _mediator.Send(command);
+        return result.IsSuccess ? Ok() : NotFound(result.Value);
     }
 }

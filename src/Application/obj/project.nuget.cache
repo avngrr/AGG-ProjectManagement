@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/fWeSER9VbZKLdhULsn4WmJHBkoPJJC6DfNgoyHOejKyBunEwdlHgRUyyyOy63YMkymC8tQFJErwZ+arrT+WMg==",
+  "dgSpecHash": "wXGfOECEsimCOi/U8DbDcwstkU7HQWzxyrylCqxzWu3EnWiBuKndinyCe9HBdQ7dbzhFXwJCXrJ48L+h7+wFYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\fluentresults\\3.5.0\\fluentresults.3.5.0.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\languageext.core\\4.1.0\\languageext.core.4.1.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

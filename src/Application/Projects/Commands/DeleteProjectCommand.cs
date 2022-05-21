@@ -1,15 +1,18 @@
-﻿using Application.Common.Interfaces.Repository;
+﻿using System.ComponentModel.DataAnnotations;
+using Application.Common.Interfaces.Repository;
 using Domain.Entities.Projects;
+using FluentResults;
 using MediatR;
 
 namespace Application.Projects.Commands;
 
-public class DeleteProjectCommand : IRequest<int>
+public class DeleteProjectCommand : IRequest<Result<string>>
 {
+    [Required]
     public int Id { get; set; }
 }
 
-internal class DeleteProjectCommandHandler : IRequestHandler<DeleteProjectCommand, int>
+internal class DeleteProjectCommandHandler : IRequestHandler<DeleteProjectCommand, Result<string>>
 {
     private readonly IRepository<Project, int> _repository;
     public DeleteProjectCommandHandler(IRepository<Project, int> repository)
@@ -17,10 +20,14 @@ internal class DeleteProjectCommandHandler : IRequestHandler<DeleteProjectComman
         _repository = repository;
     }
 
-    public async Task<int> Handle(DeleteProjectCommand request, CancellationToken cancellationToken)
+    public async Task<Result<string>> Handle(DeleteProjectCommand request, CancellationToken cancellationToken)
     {
         var project = await _repository.GetByIdAsync(request.Id);
+        if (project is null)
+        {
+            return Result.Fail("Project not found!");
+        }
         await _repository.DeleteAsync(project);
-        return 0;
+        return Result.Ok("Deleted project!");
     }
 }

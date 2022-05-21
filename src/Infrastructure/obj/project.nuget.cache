@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "26Lbwhr+d1EQ7qF0XCm1USLCS69QRik+qSJXb5klTrOlaMq+hchnlp19ywBmX1E1H5+fbD6bDQxnYic5kkpwEQ==",
+  "dgSpecHash": "2fEBb6vISvlidw7+6SHXuFjY7WKgSef1OrXfIgxSzuTJzE/86qXy0LYrTDHZhSLwMMlDuZhB52vU6f1EdL8QLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -11,6 +11,8 @@
     "C:\\Users\\Enzo\\.nuget\\packages\\duende.identityserver.entityframework\\5.2.0\\duende.identityserver.entityframework.5.2.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\duende.identityserver.entityframework.storage\\5.2.0\\duende.identityserver.entityframework.storage.5.2.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\duende.identityserver.storage\\5.2.0\\duende.identityserver.storage.5.2.0.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\fluentresults\\3.5.0\\fluentresults.3.5.0.nupkg.sha512",
+    "C:\\Users\\Enzo\\.nuget\\packages\\fluentvalidation\\11.0.1\\fluentvalidation.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\identitymodel\\5.1.0\\identitymodel.5.1.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\languageext.core\\4.1.1\\languageext.core.4.1.1.nupkg.sha512",

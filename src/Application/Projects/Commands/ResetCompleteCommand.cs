@@ -1,14 +1,17 @@
-﻿using Application.Common.Interfaces.Repository;
+﻿using System.ComponentModel.DataAnnotations;
+using Application.Common.Interfaces.Repository;
 using Domain.Entities.Projects;
+using FluentResults;
 using MediatR;
 
 namespace Application.Projects.Commands;
 
-public class ResetCompleteCommand : IRequest<int>
+public class ResetCompleteCommand : IRequest<Result<string>>
 {
+    [Required]
     public int Id { get; set; }
 }
-internal class ResetCompleteCommandHandler : IRequestHandler<ResetCompleteCommand, int>
+internal class ResetCompleteCommandHandler : IRequestHandler<ResetCompleteCommand, Result<string>>
 {
     private readonly IRepository<Project, int> _repository;
 
@@ -16,12 +19,16 @@ internal class ResetCompleteCommandHandler : IRequestHandler<ResetCompleteComman
     {
         _repository = repository;
     }
-    public async Task<int> Handle(ResetCompleteCommand request, CancellationToken cancellationToken)
+    public async Task<Result<string>> Handle(ResetCompleteCommand request, CancellationToken cancellationToken)
     {
         var project = await _repository.GetByIdAsync(request.Id);
+        if (project is null)
+        {
+            return Result.Fail("Project not found!");
+        }
         project.CompleteData = null;
         await _repository.UpdateAsync(project);
         await _repository.Save();
-        return 0;
+        return Result.Ok("Returned completed project to incomplete!");
     }
 }

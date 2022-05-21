@@ -2,11 +2,12 @@
 using Application.Common.Interfaces.Repository;
 using AutoMapper;
 using Domain.Entities.Projects;
+using FluentResults;
 using MediatR;
 
 namespace Application.Projects.Commands;
 
-public class AddEditProjectCommand : IRequest<int>
+public class AddEditProjectCommand : IRequest<Result<string>>
 {
     public int Id { get; set; } = 0;
     [Required]
@@ -20,7 +21,7 @@ public class AddEditProjectCommand : IRequest<int>
     public List<string> UserIds { get; set; } = new List<string>();
 }
 
-internal class AddEditProjectCommandHandler : IRequestHandler<AddEditProjectCommand, int>
+internal class AddEditProjectCommandHandler : IRequestHandler<AddEditProjectCommand, Result<string>>
 {
     private readonly IRepository<Project, int> _repository;
     private readonly IMapper _mapper;
@@ -29,14 +30,14 @@ internal class AddEditProjectCommandHandler : IRequestHandler<AddEditProjectComm
         _mapper = mapper;
         _repository = repository;
     }
-    public async Task<int> Handle(AddEditProjectCommand request, CancellationToken cancellationToken)
+    public async Task<Result<string>> Handle(AddEditProjectCommand request, CancellationToken cancellationToken)
     {
         if (request.Id == 0)
         {
             var project = _mapper.Map<Project>(request);
             await _repository.AddAsync(project);
             await _repository.Save();
-            return 0;
+            return Result.Ok("Created new project!");
         }
         else
         {
@@ -48,7 +49,7 @@ internal class AddEditProjectCommandHandler : IRequestHandler<AddEditProjectComm
             project.UserIds = request.UserIds.SequenceEqual(project.UserIds) ? project.UserIds : request.UserIds;
             await _repository.UpdateAsync(project);
             await _repository.Save();
-            return 0;
+            return Result.Ok("updated project!");
         }
     }
 }

@@ -227,3 +227,5 @@ C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\Infrastructure\obj\Debug\net6.0\refin
 C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
 C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\Enzo\RiderProjects\AGG\src\Infrastructure\bin\Debug\net6.0\FluentResults.dll
+C:\Users\Enzo\RiderProjects\AGG\src\Infrastructure\bin\Debug\net6.0\FluentValidation.dll

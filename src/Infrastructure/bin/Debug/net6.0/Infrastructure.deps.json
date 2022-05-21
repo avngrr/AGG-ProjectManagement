@@ -115,6 +115,22 @@
           }
         }
       },
+      "FluentResults/3.5.0": {
+        "runtime": {
+          "lib/netstandard2.1/FluentResults.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.0.0"
+          }
+        }
+      },
+      "FluentValidation/11.0.1": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -1014,6 +1030,8 @@
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Domain": "1.0.0",
+          "FluentResults": "3.5.0",
+          "FluentValidation": "11.0.1",
           "LanguageExt.Core": "4.1.1",
           "MediatR": "10.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
@@ -1088,6 +1106,20 @@
       "sha512": "sha512-Zi6+Jnjw/VsXkUk+x4jXa+9Krc+mLJzj5V5G/dKMC0Wk+j9yu4FWwWhGkeI6hIDiT203gsFm4th5GOlnv4IjWg==",
       "path": "duende.identityserver.storage/5.2.0",
       "hashPath": "duende.identityserver.storage.5.2.0.nupkg.sha512"
+    },
+    "FluentResults/3.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lAAigAhVw3RBPQHhjmMbkdYmZUy5PViBkVXjzSyZrVhvsDtFJGPsiEK/KDvENIzemtzQ2y5/WOMERPg8l87iJg==",
+      "path": "fluentresults/3.5.0",
+      "hashPath": "fluentresults.3.5.0.nupkg.sha512"
+    },
+    "FluentValidation/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fcL5zF/glDwskUtpL0IfBupVWTChxOOvVs+dAA7Gme5NjIeJBiFKWq3eZV1O+AigucnBTr8SWG7wRRn+PgFnTw==",
+      "path": "fluentvalidation/11.0.1",
+      "hashPath": "fluentvalidation.11.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
