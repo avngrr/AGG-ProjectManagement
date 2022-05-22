@@ -12,7 +12,7 @@ public class AddEditProjectValidator : AbstractValidator<AddEditProjectCommand>
         RuleFor(request => request.Description)
             .Must(s => !string.IsNullOrWhiteSpace(s)).WithMessage(s => "Description is required!");
         RuleFor(request => request.StartDate)
-            .Must(d => d == DateTime.MinValue).WithMessage(s => "Startdate is required!");
+            .Must(d => d != DateTime.MinValue).WithMessage(s => "Startdate is required!");
         RuleFor(request => request.ProjectManagerId)
             .Must(s => !string.IsNullOrWhiteSpace(s)).WithMessage(s => "Project needs a projectmanager");
     }

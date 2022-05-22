@@ -17,7 +17,7 @@ public class AddEditProjectCommand : IRequest<Result<string>>
     [Required]
     public string ProjectManagerId { get; set; }
     [Required]
-    public DateTime StartDate { get; set; }
+    public DateTime? StartDate { get; set; }
     public List<string> UserIds { get; set; } = new List<string>();
 }
 
@@ -44,7 +44,7 @@ internal class AddEditProjectCommandHandler : IRequestHandler<AddEditProjectComm
             var project = await _repository.GetByIdAsync(request.Id);
             project.Name = request.Name;
             project.Description = request.Description;
-            project.StartDate = request.StartDate;
+            project.StartDate = request.StartDate ?? DateTime.MinValue;
             project.ProjectManagerId = request.ProjectManagerId;
             project.UserIds = request.UserIds.SequenceEqual(project.UserIds) ? project.UserIds : request.UserIds;
             await _repository.UpdateAsync(project);

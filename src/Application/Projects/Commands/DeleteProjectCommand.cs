@@ -28,6 +28,7 @@ internal class DeleteProjectCommandHandler : IRequestHandler<DeleteProjectComman
             return Result.Fail("Project not found!");
         }
         await _repository.DeleteAsync(project);
+        await _repository.Save();
         return Result.Ok("Deleted project!");
     }
 }

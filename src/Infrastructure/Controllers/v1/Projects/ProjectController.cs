@@ -52,7 +52,7 @@ public class ProjectController : BaseController
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Delete)]
-    [HttpDelete]
+    [HttpDelete("{projectId}")]
     public async Task<IActionResult> Delete(int projectId)
     {
         var result = await _mediator.Send(new DeleteProjectCommand() { Id = projectId });
