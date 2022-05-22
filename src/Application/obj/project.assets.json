@@ -2841,11 +2841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Enzo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Application\\obj\\",
+      "outputPath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Enzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2862,8 +2862,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Domain\\Domain.csproj"
+            "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Domain\\Domain.csproj"
             }
           }
         }
@@ -2926,7 +2926,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

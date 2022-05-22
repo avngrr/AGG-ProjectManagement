@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wXGfOECEsimCOi/U8DbDcwstkU7HQWzxyrylCqxzWu3EnWiBuKndinyCe9HBdQ7dbzhFXwJCXrJ48L+h7+wFYw==",
+  "dgSpecHash": "gIBFEl+5B4QmQZ3ivSYjs1indNXu1DoVrFvI+47DGScqvCDtn9S/IHKXI/3H6E36BgBGqVGpoqfdcknvf6CVJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

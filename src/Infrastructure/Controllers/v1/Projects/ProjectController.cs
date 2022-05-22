@@ -39,23 +39,23 @@ public class ProjectController : BaseController
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
     [HttpPost("complete")]
-    public async Task<IActionResult> Post(CompleteProjectCommand command)
+    public async Task<IActionResult> CompleteProject(int projectId)
     {
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(new CompleteProjectCommand(){ Id = projectId });
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
     [HttpPost("reset")]
-    public async Task<IActionResult> Post(ResetCompleteCommand command)
+    public async Task<IActionResult> ResetProject(int projectId)
     {
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(new ResetCompleteCommand(){ Id = projectId });
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Delete)]
     [HttpDelete]
-    public async Task<IActionResult> Post(DeleteProjectCommand command)
+    public async Task<IActionResult> Delete(int projectId)
     {
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(new DeleteProjectCommand() { Id = projectId });
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
 }

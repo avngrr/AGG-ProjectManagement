@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
 using WebUI.Authentication;
 using WebUI.Managers.Identity.Authentication;
+using WebUI.Managers.Projects;
 
 namespace WebUI.Extensions;
 
@@ -26,6 +27,7 @@ public static class WebAssemblyHostBuilderExtensions
             .AddTransient<AuthenticationHeaderHandler>()
             .AddScoped<AuthenticationStateProvider, AuthStateProvider>()
             .AddScoped<IAuthenticationManager, AuthenticationManager>()
+            .AddTransient<IProjectManager, ProjectManager>()
             .AddScoped(sp =>
             {
                 return sp.GetRequiredService<IHttpClientFactory>().CreateClient("Infrastructure");

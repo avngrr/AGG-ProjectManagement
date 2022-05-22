@@ -11,53 +11,57 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = WebUI
 build_property.RootNamespace = WebUI
-build_property.ProjectDir = C:\Users\Enzo\RiderProjects\AGG\src\WebUI\
+build_property.ProjectDir = C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\WebUI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Enzo\RiderProjects\AGG\src\WebUI
+build_property.MSBuildProjectDirectory = C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\WebUI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/App.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Pages/Auth/Login.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Pages/Auth/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Pages/Auth/Register.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Pages/Auth/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Pages/Index.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Shared/Components/PageTitle.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcUGFnZVRpdGxlLnJhem9y
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Pages/Projects/ProjectList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcUHJvamVjdExpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Shared/Components/UserCard.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Shared/Components/CustomPageTitle.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ3VzdG9tUGFnZVRpdGxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Shared/Components/UserCard.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVXNlckNhcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Shared/RedirectToLogin.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Shared/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Shared/SurveyPrompt.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/_Imports.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Shared/MainLayout.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-mo84rfmz43
 
-[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Shared/NavMenu.razor]
+[C:/Users/Enzo/Documents/GitHub/AGG-DDD/src/WebUI/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-aj272qsncx

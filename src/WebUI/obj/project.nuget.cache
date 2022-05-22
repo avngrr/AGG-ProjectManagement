@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7UDSxKdUUEDCrOiJy6XizEKxVeQvBBSGhMFnNhV1T24a7Vd1ByVJYRjHzlR+tc8r27ik67Iwl5ScMnoWwUCHTw==",
+  "dgSpecHash": "kE3W+CEXIR64fYTKoISOj7HaYYLhyXt3Fz7tjI7/GL8NVzR9Crjj17XwMkbFyiME1sF2+0Z0ICC7XJj1XkAVoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\WebUI.csproj",
+  "projectFilePath": "C:\\Users\\Enzo\\Documents\\GitHub\\AGG-DDD\\src\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -93,7 +93,7 @@
     "C:\\Users\\Enzo\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Enzo\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
-    "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.4\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.4.nupkg.sha512"
+    "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.5.nupkg.sha512"
   ],
   "logs": []
 }

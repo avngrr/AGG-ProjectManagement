@@ -1,0 +1,36 @@
+﻿@page "/Projects"
+
+<CustomPageTitle Title="Projects" Description="List of all projects"></CustomPageTitle>
+@if (IsLoaded)
+{
+    <MudTable Hover="true" Elevation="25" Items="_projects">
+        <ToolBarContent>
+            <div class="justify-content-center">
+                <MudButton DisableElevation="true" Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" IconColor="Color.Surface">Create</MudButton>
+            </div>
+            <MudSpacer />
+            <MudTextField T="string" ValueChanged="(s => OnSearch(s))" Immediate="true" Adornment="Adornment.Start" IconSize="Size.Medium" AdornmentIcon="@Icons.Material.Filled.Search" ></MudTextField>
+        </ToolBarContent>
+        <HeaderContent>
+            <MudTh>Id</MudTh>
+            <MudTh>Name</MudTh>
+            <MudTh>Description</MudTh>
+            <MudTh>Projectmanager</MudTh>
+            <MudTh>Startdate</MudTh>
+            <MudTh>Actions</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Id">@context.Id</MudTd>
+            <MudTd DataLabel="Name">@context.Name</MudTd>
+            <MudTd DataLabel="Description">@context.Description</MudTd>
+            <MudTd DataLabel="Projectmanager">@context.ProjectManagerId</MudTd>
+            <MudTd DataLabel="Startdate">@context.StartDate</MudTd>
+            <MudTd DataLabel="Actions">
+                <MudMenu Label="Actions" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" AnchorOrigin="Origin.BottomLeft">
+                    <MudMenuItem>Edit</MudMenuItem> 
+                    <MudMenuItem>Delete</MudMenuItem>
+                </MudMenu>
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+}
