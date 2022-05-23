@@ -8,4 +8,5 @@ public interface IAuthenticationManager
     Task<RegisterResponse> RegisterAsync(RegisterCommand request);
     Task<LoginResponse> LoginAsync(LoginCommand userForAuthentication);
     Task LogoutAsync();
+    Task<string> TryRefreshToken();
 }

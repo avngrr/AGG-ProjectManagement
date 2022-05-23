@@ -7,4 +7,5 @@ public interface IAuthService
 {
     Task<LoginResponse> LoginAsync(LoginCommand request);
     Task<RegisterResponse> RegisterAsync(RegisterCommand? request);
+    Task<LoginResponse> RefreshToken(RefreshTokenCommand command);
 }

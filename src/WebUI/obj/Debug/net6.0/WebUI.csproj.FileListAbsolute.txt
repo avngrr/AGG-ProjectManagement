@@ -1816,3 +1816,7 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\refint\WebUI.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.pdb
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\ref\WebUI.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Toolbelt.Blazor.HttpClientInterceptor.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Toolbelt.Blazor.HttpClientInterceptor.dll.gz
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Toolbelt.Blazor.HttpClientInterceptor.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\5DP7yxhS.gz

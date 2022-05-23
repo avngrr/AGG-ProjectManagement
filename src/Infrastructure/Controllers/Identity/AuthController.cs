@@ -1,5 +1,6 @@
 ﻿using Application.Common.Interfaces.Identity;
 using Application.Identity.Commands;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Infrastructure.Controllers.Identity;
@@ -9,6 +10,7 @@ namespace Infrastructure.Controllers.Identity;
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
+    
     public AuthController(IAuthService authService)
     {
         _authService = authService;
@@ -25,6 +27,16 @@ public class AuthController : ControllerBase
         {
             return Unauthorized(result);
         }
+    }
+    [AllowAnonymous]
+    [HttpPost("refresh-token")]
+    public async Task<IActionResult> RefreshToken(RefreshTokenCommand command)
+    {
+        var response = await _authService.RefreshToken(command);
+
+        if (response == null)
+            return Unauthorized(new { message = "Invalid token" });
+        return Ok(response);
     }
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegisterCommand? request)

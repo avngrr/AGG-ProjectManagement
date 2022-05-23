@@ -1,9 +1,7 @@
-using System.Reflection;
 using Application.Common.Interfaces.Data;
 using Application.Extensions;
 using Infrastructure;
 using Infrastructure.Data;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

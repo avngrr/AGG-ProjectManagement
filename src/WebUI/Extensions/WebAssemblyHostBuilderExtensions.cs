@@ -4,8 +4,10 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
+using Toolbelt.Blazor.Extensions.DependencyInjection;
 using WebUI.Authentication;
 using WebUI.Managers.Identity.Authentication;
+using WebUI.Managers.Interceptor;
 using WebUI.Managers.Projects;
 
 namespace WebUI.Extensions;
@@ -28,12 +30,12 @@ public static class WebAssemblyHostBuilderExtensions
             .AddScoped<AuthenticationStateProvider, AuthStateProvider>()
             .AddScoped<IAuthenticationManager, AuthenticationManager>()
             .AddTransient<IProjectManager, ProjectManager>()
+            .AddScoped<HttpInterceptorService>()
             .AddScoped(sp =>
-            {
-                return sp.GetRequiredService<IHttpClientFactory>().CreateClient("Infrastructure");
-            })
+                sp.GetRequiredService<IHttpClientFactory>().CreateClient("Infrastructure").EnableIntercept(sp))
             .AddHttpClient("Infrastructure", client => client.BaseAddress = new Uri("https://localhost:7010"))
             .AddHttpMessageHandler<AuthenticationHeaderHandler>();
+        builder.Services.AddHttpClientInterceptor();
 
         return builder;
     }

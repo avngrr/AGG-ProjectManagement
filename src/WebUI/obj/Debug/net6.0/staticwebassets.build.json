@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4rRvXgyUWioEf7LFtOQFO61eeyeYLvkOzwx9YgRg6gE=",
+  "Hash": "+mjd4PuuPIvSzwHMrJZ7fVT3C4rFVb/+WZjhlEGvFl8=",
   "Source": "WebUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -3825,6 +3825,23 @@
       "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.4\\runtimes\\browser-wasm\\lib\\net6.0\\System.Xml.XPath.XDocument.dll"
     },
     {
+      "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Toolbelt.Blazor.HttpClientInterceptor.dll",
+      "SourceId": "WebUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Toolbelt.Blazor.HttpClientInterceptor.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\.nuget\\packages\\toolbelt.blazor.httpclientinterceptor\\10.1.0\\lib\\netstandard2.1\\Toolbelt.Blazor.HttpClientInterceptor.dll"
+    },
+    {
       "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\WebUI.dll",
       "SourceId": "WebUI",
       "SourceType": "Computed",
@@ -4316,6 +4333,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\obj\\Debug\\net6.0\\build-gz\\5DP7yxhS.gz",
+      "SourceId": "WebUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Toolbelt.Blazor.HttpClientInterceptor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Toolbelt.Blazor.HttpClientInterceptor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Toolbelt.Blazor.HttpClientInterceptor.dll"
     },
     {
       "Identity": "C:\\Users\\Enzo\\RiderProjects\\AGG\\src\\WebUI\\obj\\Debug\\net6.0\\build-gz\\5E49BlTZ.gz",

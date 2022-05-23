@@ -15,9 +15,11 @@
 @using WebUI.Pages.Auth
 @using WebUI.Shared.Components
 @using MudBlazor
+@using WebUI.Managers.Interceptor
 
 @attribute [Authorize]
 @inject AuthenticationStateProvider _stateProvider
 @inject NavigationManager _navigationManager
 @inject IAuthenticationManager _authenticationManager
 @inject ISnackbar _snackBar
+@inject HttpInterceptorService _Interceptor

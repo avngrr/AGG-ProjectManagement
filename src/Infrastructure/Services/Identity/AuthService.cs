@@ -1,9 +1,11 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using Application.Common.Interfaces.Identity;
 using Application.Identity.Commands;
 using Application.Identity.Responses;
+using Infrastructure.Data;
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -17,14 +19,16 @@ public class AuthService : IAuthService
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly UserManager<ApplicationUser> _userManager;
+    private readonly ApplicationDbContext _context;
 
     public AuthService(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager,
-        SignInManager<ApplicationUser> signInManager, IConfiguration configuration)
+        SignInManager<ApplicationUser> signInManager, IConfiguration configuration, ApplicationDbContext context)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _roleManager = roleManager;
         _configuration = configuration;
+        _context = context;
         _jwtSettings = _configuration.GetSection("JwtSettings");
     }
 
@@ -35,13 +39,36 @@ public class AuthService : IAuthService
         if (!user.EmailConfirmed) return new LoginResponse {ErrorMessage = "Email not confirmed!"};
         var passwordValid = await _userManager.CheckPasswordAsync(user, request.Password);
         if (!passwordValid) return new LoginResponse {ErrorMessage = "Invalid credentials"};
-        var signingCredentials = GetSigningCredentials();
-        var claims = await GetClaims(user);
-        var tokenOptions = GenerateTokenOptions(signingCredentials, claims);
-        var token = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
+        var token = await generateJwtToken(user);
+        user.RefreshToken = GenerateRefreshToken();
+        user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
+        await _userManager.UpdateAsync(user);
         return new LoginResponse
         {
             Token = token,
+            RefreshToken = user.RefreshToken,
+            IsSuccess = true
+        };
+    }
+    public async Task<LoginResponse> RefreshToken(RefreshTokenCommand command)
+    {
+        var user = _context.Users.SingleOrDefault(u => u.RefreshToken == command.RefreshToken);
+            
+        // return null if no user found with token
+        if (user == null) return null;
+
+        // replace old refresh token with a new one and save
+
+        user.RefreshToken = GenerateRefreshToken();
+        user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
+        await _userManager.UpdateAsync(user);
+
+        // generate new jwt
+        var newJwtToken = await generateJwtToken(user);
+        return new LoginResponse
+        {
+            Token = newJwtToken,
+            RefreshToken = user.RefreshToken,
             IsSuccess = true
         };
     }
@@ -73,7 +100,7 @@ public class AuthService : IAuthService
         return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
     }
 
-    public async Task<IEnumerable<Claim>> GetClaims(ApplicationUser user)
+    private async Task<IEnumerable<Claim>> GetClaims(ApplicationUser user)
     {
         var userClaims = await _userManager.GetClaimsAsync(user);
         var roles = await _userManager.GetRolesAsync(user);
@@ -99,6 +126,13 @@ public class AuthService : IAuthService
         return claims;
     }
 
+    private async Task<string> generateJwtToken(ApplicationUser user)
+    {
+        var signingCredentials = GetSigningCredentials();
+        var claims = await GetClaims(user);
+        var tokenOptions = GenerateTokenOptions(signingCredentials, claims);
+        return new JwtSecurityTokenHandler().WriteToken(tokenOptions);
+    }
     private JwtSecurityToken GenerateTokenOptions(SigningCredentials signingCredentials, IEnumerable<Claim> claims)
     {
         var tokenOptions = new JwtSecurityToken(
@@ -107,5 +141,13 @@ public class AuthService : IAuthService
             signingCredentials: signingCredentials);
 
         return tokenOptions;
+    }
+    
+    private string GenerateRefreshToken()
+    {
+        var randomNumber = new byte[32];
+        using var rng = RandomNumberGenerator.Create();
+        rng.GetBytes(randomNumber);
+        return Convert.ToBase64String(randomNumber);
     }
 }

@@ -26,7 +26,7 @@ public class AuditableContext : ApiAuthorizationDbContext<ApplicationUser>, IApp
     {
         ChangeTracker.DetectChanges();
         var auditEntries = new List<AuditEntry>();
-        foreach (var entry in ChangeTracker.Entries())
+        foreach (var entry in ChangeTracker.Entries<AuditableEntity<int>>().ToList())
         {
             if (entry.Entity is Audit || entry.State == EntityState.Detached || entry.State == EntityState.Unchanged) continue;
             var auditEntry = new AuditEntry(entry);

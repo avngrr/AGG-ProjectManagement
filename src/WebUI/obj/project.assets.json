@@ -1032,6 +1032,18 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "Toolbelt.Blazor.HttpClientInterceptor/10.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "3.2.0-preview2.20160.5"
+        },
+        "compile": {
+          "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll": {}
+        }
+      },
       "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2207,6 +2219,18 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Toolbelt.Blazor.HttpClientInterceptor/10.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "3.2.0-preview2.20160.5"
+        },
+        "compile": {
+          "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll": {}
         }
       },
       "Application/1.0.0": {
@@ -5310,6 +5334,21 @@
         "version.txt"
       ]
     },
+    "Toolbelt.Blazor.HttpClientInterceptor/10.1.0": {
+      "sha512": "rHJzJzBm3rYchA2Lzb7Fr46Xspr2cbE4p9jIYvj60rl+x5+5oiOh3QT2Cmn/u8/zuQ914k3AepH/FdFS1UfDew==",
+      "type": "package",
+      "path": "toolbelt.blazor.httpclientinterceptor/10.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.dll",
+        "lib/netstandard2.1/Toolbelt.Blazor.HttpClientInterceptor.xml",
+        "nupkg-icon.png",
+        "toolbelt.blazor.httpclientinterceptor.10.1.0.nupkg.sha512",
+        "toolbelt.blazor.httpclientinterceptor.nuspec"
+      ]
+    },
     "Application/1.0.0": {
       "type": "project",
       "path": "../Application/Application.csproj",
@@ -5332,7 +5371,8 @@
       "Microsoft.AspNetCore.Components.WebAssembly.Authentication >= 6.0.4",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.4",
       "Microsoft.Extensions.Http >= 6.0.0",
-      "MudBlazor >= 6.0.10"
+      "MudBlazor >= 6.0.10",
+      "Toolbelt.Blazor.HttpClientInterceptor >= 10.1.0"
     ]
   },
   "packageFolders": {
@@ -5413,6 +5453,10 @@
           "MudBlazor": {
             "target": "Package",
             "version": "[6.0.10, )"
+          },
+          "Toolbelt.Blazor.HttpClientInterceptor": {
+            "target": "Package",
+            "version": "[10.1.0, )"
           }
         },
         "imports": [
