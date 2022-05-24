@@ -17,26 +17,24 @@ public partial class ProjectList
     [Inject] private IDialogService _dialogService { get; set; }
     [Inject] private IProjectManager _projectManager { get; set; }
     private string _searchString = "";
-
     protected override async Task OnInitializedAsync()
     {
-        await Filter();
+        await RefreshScreen();
     }
-    private async Task Filter()
+
+    private async Task RefreshScreen()
     {
         _projects = await _projectManager.GetAllAsync();
-        if (!string.IsNullOrWhiteSpace(_searchString))
-        {
-            _projects = _projects.Where(
-                p => p.Name.Contains(_searchString, StringComparison.InvariantCultureIgnoreCase)
-            ).ToList();
-        }
-        StateHasChanged();
     }
-    private async Task OnSearch(string s = "")
+    private bool OnSearch(ProjectResponse response)
     {
-        _searchString = s;
-        await Filter();
+        if (string.IsNullOrWhiteSpace(_searchString))
+            return true;
+        if (response.Name.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (response.Description.Contains(_searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        return false;
     }
 
     private async Task AddEditModal(int id = 0)
@@ -70,7 +68,7 @@ public partial class ProjectList
         var result = await dialog.Result;
         if (result != DialogResult.Cancel())
         {
-            await OnSearch();
+            await RefreshScreen();
         }
     }
 
@@ -91,7 +89,7 @@ public partial class ProjectList
         if (result != DialogResult.Cancel())
         {
             await _projectManager.DeleteAsync(id);
-            await OnSearch();
+            await RefreshScreen();
         }
     }
 }

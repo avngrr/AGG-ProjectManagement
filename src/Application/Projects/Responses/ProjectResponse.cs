@@ -1,4 +1,6 @@
-﻿namespace Application.Projects.Responses;
+﻿using Application.Identity.Responses;
+
+namespace Application.Projects.Responses;
 
 public class ProjectResponse
 {
@@ -6,6 +8,7 @@ public class ProjectResponse
     public string Name { get; set; }
     public string Description { get; set; }
     public string ProjectManagerId { get; set; }
+    public UserResponse ProjectManager { get; set; }
     public DateTime StartDate { get; set; }
     public DateTime? CompleteData { get; set; }
     public bool IsDeleted { get; set; }
