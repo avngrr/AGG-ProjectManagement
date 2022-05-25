@@ -33,4 +33,11 @@ public static class Permissions
         public const string Create = "Permissions.Projects.Create";
         public const string Delete = "Permissions.Projects.Delete";
     }
+    public static class Tickets
+    {
+        public const string View = "Permissions.Tickets.View";
+        public const string Edit = "Permissions.Tickets.Edit";
+        public const string Create = "Permissions.Tickets.Create";
+        public const string Delete = "Permissions.Tickets.Delete";
+    }
 }

@@ -127,6 +127,7 @@ public static class ServiceCollectionExtension
 
     internal static IServiceCollection AddRepositories(this IServiceCollection services)
     {
+        services.AddTransient<ITicketRepository, TicketRepository>();
         return services.AddTransient(typeof(IRepository<,>), typeof(Repository<,>));
     }
     internal static IServiceCollection AddVersioning(this IServiceCollection services)

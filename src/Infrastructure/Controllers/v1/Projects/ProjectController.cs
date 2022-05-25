@@ -27,7 +27,7 @@ public class ProjectController : BaseController
     [HttpGet("{projectId}")]
     public async Task<IActionResult> GetById(int projectId)
     {
-        var result = await _mediator.Send(new GetByIdProjectsQuery() { Id = projectId });
+        var result = await _mediator.Send(new GetByIdProjectQuery() { Id = projectId });
         return result.Match<IActionResult>(Ok, NotFound);
     }
     [Authorize(Policy = Permissions.Projects.Create)]

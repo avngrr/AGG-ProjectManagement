@@ -9,13 +9,11 @@ namespace Infrastructure.Repositories;
 public class Repository<T, TId> : IRepository<T, TId> where T : AuditableEntity<TId>
 {
     private readonly ApplicationDbContext _context;
-    private DbSet<T> _table;
-    private string _userId;
-    public Repository(ApplicationDbContext context, IHttpContextAccessor  _accessor)
+    private readonly DbSet<T> _table;
+    public Repository(ApplicationDbContext context)
     {
         _context = context;
         _table = _context.Set<T>();
-        _userId = _accessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
     }
 
     public async Task<T> GetByIdAsync(object id)
