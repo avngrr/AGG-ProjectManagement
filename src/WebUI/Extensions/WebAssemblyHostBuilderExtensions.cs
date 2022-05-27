@@ -30,6 +30,7 @@ public static class WebAssemblyHostBuilderExtensions
             .AddScoped<AuthenticationStateProvider, AuthStateProvider>()
             .AddScoped<IAuthenticationManager, AuthenticationManager>()
             .AddTransient<IProjectManager, ProjectManager>()
+            .AddTransient<ITicketManager, TicketManager>()
             .AddScoped<HttpInterceptorService>()
             .AddScoped(sp =>
                 sp.GetRequiredService<IHttpClientFactory>().CreateClient("Infrastructure").EnableIntercept(sp))

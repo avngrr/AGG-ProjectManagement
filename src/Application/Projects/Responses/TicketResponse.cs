@@ -10,5 +10,6 @@ public class TicketResponse
     public DateTime StartDate { get; set; } 
     public DateTime CompletedDate { get; set; }
     public Priority Priority { get; set; }
+    public Status Status { get; set; }
     public List<string> UserIds { get; set; }
 }

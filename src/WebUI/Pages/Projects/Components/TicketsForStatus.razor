@@ -1,0 +1,26 @@
+﻿@using Application.Projects.Responses
+<MudPaper class="pa-16 ma-2" Outlined="true">
+    @Title
+    <MudSpacer />
+    @foreach (var t in TicketList)
+    {
+        <MudCard>
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h4">@t.Name</MudText>
+                </CardHeaderContent>
+                <CardHeaderActions>
+                    <MudIconButton Icon="@Icons.Material.Filled.Menu">
+                    </MudIconButton>
+                </CardHeaderActions>
+            </MudCardHeader>
+            <MudCardContent>
+                <MudText Typo="Typo.body1">@t.Description</MudText>
+            </MudCardContent>
+        </MudCard>
+    }
+</MudPaper>
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public List<TicketResponse> TicketList { get; set; }
+}

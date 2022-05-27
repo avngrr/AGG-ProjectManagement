@@ -12,9 +12,9 @@ namespace Infrastructure.Data;
 public class ApplicationDbContext : AuditableContext
 {
     private readonly string _userId;
-    public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions, IHttpContextAccessor _accessor) : base(options, operationalStoreOptions)
+    public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions, IHttpContextAccessor accessor) : base(options, operationalStoreOptions)
     {
-        _userId = _accessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
+        _userId = accessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
     }
     public DbSet<Project> Projects { get; set; }
     public DbSet<Ticket> Tickets { get; set; }

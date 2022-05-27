@@ -1,0 +1,100 @@
+﻿@page "/Projects/{projectId:int}"
+@using Application.Projects.Responses
+@using Domain.Common.Constants
+@using Domain.Enums
+
+<CustomPageTitle Title="@_project.Name" Description="@_project.Description"></CustomPageTitle> 
+<MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Add" Color="Color.Primary" @onclick="(() => AddEditModal())">Add</MudButton>
+@if (HasTickets)
+{
+    <MudDropContainer ItemDropped="ItemUpdated" T="TicketResponse" Items="_ticketList" ItemsSelector="@((response, s) => response.Status.ToString() == s)" Class="d-flex flex-row">
+        <ChildContent>
+            <MudPaper Class="pa-4 ma-4 d-flex flex-column mud-background-gray mud-width-full rounded-lg">
+                <MudToolBar DisableGutters="true">
+                    <MudText Typo="Typo.subtitle1">
+                        <b>@(Projects.TicketStatus.ToDo)</b>
+                    </MudText>
+                    <MudSpacer/>
+                    <MudMenu Icon="@Icons.Material.Filled.MoreVert" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight" ListClass="pa-2 d-flex flex-column" PopoverClass="mud-elevation-25">
+                        <MudButton Size="Size.Small" Color="Color.Default" StartIcon="@Icons.Material.Filled.MoreVert">Rename Section</MudButton>
+                    </MudMenu>
+                </MudToolBar>
+
+                <MudDropZone T="TicketResponse" Identifier="@Status.ToDo.ToString()" Class="mud-height-full">
+                </MudDropZone>
+            </MudPaper>
+            <MudPaper Class="pa-4 ma-4 d-flex flex-column mud-background-gray mud-width-full rounded-lg">
+                <MudToolBar DisableGutters="true">
+                    <MudText Typo="Typo.subtitle1">
+                        <b>@(Projects.TicketStatus.InProgress)</b>
+                    </MudText>
+                    <MudSpacer/>
+                    <MudMenu Icon="@Icons.Material.Filled.MoreVert" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight" ListClass="pa-2 d-flex flex-column" PopoverClass="mud-elevation-25">
+                        <MudButton Size="Size.Small" Color="Color.Default" StartIcon="@Icons.Rounded.Edit">Rename Section</MudButton>
+                    </MudMenu>
+                </MudToolBar>
+
+                <MudDropZone T="TicketResponse" Identifier="@Status.InProgress.ToString()" Class="mud-height-full">
+                </MudDropZone>
+            </MudPaper>
+            <MudPaper Class="pa-4 ma-4 d-flex flex-column mud-background-gray mud-width-full rounded-lg">
+                <MudToolBar DisableGutters="true">
+                    <MudText Typo="Typo.subtitle1">
+                        <b>@(Projects.TicketStatus.InReview)</b>
+                    </MudText>
+                    <MudSpacer/>
+                    <MudMenu Icon="@Icons.Material.Filled.MoreVert" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight" ListClass="pa-2 d-flex flex-column" PopoverClass="mud-elevation-25">
+                        <MudButton Size="Size.Small" Color="Color.Default" StartIcon="@Icons.Material.Filled.MoreVert">Rename Section</MudButton>
+                    </MudMenu>
+                </MudToolBar>
+
+                <MudDropZone T="TicketResponse" Identifier="@Status.InReview.ToString()" Class="mud-height-full">
+                </MudDropZone>
+            </MudPaper>
+            <MudPaper Class="pa-4 ma-4 d-flex flex-column mud-background-gray mud-width-full rounded-lg">
+                <MudToolBar DisableGutters="true">
+                    <MudText Typo="Typo.subtitle1">
+                        <b>@(Projects.TicketStatus.Done)</b>
+                    </MudText>
+                    <MudSpacer/>
+                    <MudMenu Icon="@Icons.Material.Filled.MoreVert" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight" ListClass="pa-2 d-flex flex-column" PopoverClass="mud-elevation-25">
+                        <MudButton Size="Size.Small" Color="Color.Default" StartIcon="@Icons.Material.Filled.MoreVert">Rename Section</MudButton>
+                    </MudMenu>
+                </MudToolBar>
+                <MudDropZone T="TicketResponse" Identifier="@Status.Done.ToString()" Class="mud-height-full">
+                </MudDropZone>
+            </MudPaper>
+        </ChildContent>
+        <ItemRenderer>
+            <MudCard>
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.body1">@context.Name</MudText>
+                    </CardHeaderContent>
+                    <CardHeaderActions>
+                        <MudMenu Icon="@Icons.Material.Filled.MoreVert">
+                            <MudMenuItem OnClick="() => AddEditModal(context.Id)">Edit</MudMenuItem>
+                            <MudMenuItem OnClick="() => DeleteModal(context.Id)">Delete</MudMenuItem>
+                        </MudMenu>
+                    </CardHeaderActions>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body2">@context.Description</MudText>
+                    
+                </MudCardContent>
+                <MudCardActions>
+                    <MudBadge Content="3" Overlap="true"><MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.AttachFile"></MudIconButton></MudBadge>
+                    <MudSpacer />
+                    @if (context.Status == Status.ToDo)
+                    {
+                        <MudText Typo="Typo.body2">Startdate @context.StartDate.ToString("D")</MudText>
+                    }
+                    @if (context.Status == Status.InProgress)
+                    {
+                        <MudText Typo="Typo.body2">Due date @context.StartDate.ToString("D")</MudText>
+                    }
+                </MudCardActions>
+            </MudCard>
+        </ItemRenderer>
+    </MudDropContainer>
+}

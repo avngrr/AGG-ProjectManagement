@@ -1,0 +1,53 @@
+﻿@using Blazored.FluentValidation
+<EditForm Model="@_editTicketCommand"OnValidSubmit="SaveAsync">
+<FluentValidationValidator />
+<MudDialog>
+    <TitleContent>
+        @if (_editTicketCommand.Id == 0)
+        {
+            <MudText Typo="Typo.h6">
+                <MudIcon Icon="@Icons.Material.Filled.Add" Class="mr-3 mb-n1" />
+                Add Ticket
+            </MudText>
+        }
+        else
+        {
+            <MudText Typo="Typo.h6">
+                <MudIcon Icon="@Icons.Material.Filled.Update" Class="mr-3 mb-n1" />
+                Update Ticket
+            </MudText>
+        }
+    </TitleContent>
+    <DialogContent>
+        @if (_editTicketCommand.Id != 0)
+        {
+            <MudItem xs="12" md="6">
+                <MudTextField Disabled For="@(() => _editTicketCommand.Id)" @bind-Value="_editTicketCommand.Id" Label="Id" />
+            </MudItem>
+        }
+        <MudItem xs="12" md="6">
+            <MudTextField For="@(() => _editTicketCommand.Name)" @bind-Value="_editTicketCommand.Name" Label="Name" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudTextField For="@(() => _editTicketCommand.Description)" @bind-Value="_editTicketCommand.Description" Label="Description" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudTextField For="@(() => _editTicketCommand.Priority)" @bind-Value="_editTicketCommand.Priority" Label="Priority" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudDatePicker For="@(() => _editTicketCommand.StartDate)" @bind-Date="_editTicketCommand.StartDate" Label="Startdate" />
+        </MudItem>
+    </DialogContent>
+    <DialogActions>
+        <MudButton DisableElevation Variant="Variant.Filled" OnClick="(() => MudDialog.Cancel())">Cancel</MudButton>
+        @if (_editTicketCommand.Id != 0)
+        {
+            <MudButton DisableElevation Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Secondary">Update</MudButton>
+        }
+        else
+        {
+            <MudButton DisableElevation Variant="Variant.Filled" ButtonType="ButtonType.Submit" Color="Color.Success">Save</MudButton>
+        }
+    </DialogActions>
+</MudDialog>
+</EditForm>

@@ -13,6 +13,7 @@ public class Ticket : AuditableEntity<int>
     public virtual Project Project { get; set; }
     public DateTime StartDate { get; set; } 
     public DateTime CompletedDate { get; set; }
+    public Status Status { get; set; } = Status.ToDo;
     public Priority Priority { get; set; } = Priority.MID;
     public virtual List<string> UserIds { get; set; } = new List<string>();
 }

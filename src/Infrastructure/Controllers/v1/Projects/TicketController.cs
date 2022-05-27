@@ -40,4 +40,12 @@ public class TicketController : BaseController
         var result = await _mediator.Send(command);
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
+
+    [Authorize(Policy = Permissions.Tickets.Delete)]
+    [HttpDelete("{ticketId}")]
+    public async Task<IActionResult> Delete(int ticketId)
+    {
+        var result = await _mediator.Send(new DeleteTicketCommand() { Id = ticketId });
+        return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
+    }
 }

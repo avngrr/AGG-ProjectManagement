@@ -38,6 +38,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcQ29tcG9uZW50c1xBZGRFZGl0UHJvamVjdE1vZGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Pages/Projects/Components/AddEditTicketModal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcQ29tcG9uZW50c1xBZGRFZGl0VGlja2V0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Pages/Projects/Components/TicketsForStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcQ29tcG9uZW50c1xUaWNrZXRzRm9yU3RhdHVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Pages/Projects/ProjectDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcUHJvamVjdERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Enzo/RiderProjects/AGG/src/WebUI/Pages/Projects/ProjectList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcUHJvamVjdExpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

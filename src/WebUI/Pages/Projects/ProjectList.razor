@@ -4,7 +4,7 @@
 <CustomPageTitle Title="Projects" Description="List of all projects"></CustomPageTitle>
 @if (IsLoaded)
 {
-    <MudTable Elevation="25" Filter="new Func<ProjectResponse, bool>(OnSearch)" FixedHeader="true" Hover="true" Items="_projects">
+    <MudTable Elevation="25" Filter="new Func<ProjectResponse, bool>(OnSearch)" T="ProjectResponse" FixedHeader="true" Hover="true" Items="_projects" OnRowClick="OnRowClick">
         <ToolBarContent>
             <div class="justify-content-center">
                 <MudButton @onclick="() => AddEditModal(0)" DisableElevation="true" Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" IconColor="Color.Surface">Create</MudButton>

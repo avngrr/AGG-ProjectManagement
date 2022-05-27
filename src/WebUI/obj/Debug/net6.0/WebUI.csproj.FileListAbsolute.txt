@@ -905,6 +905,12 @@ C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\WebUI\obj\Debug\net6.0\WebUI.dll
 C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\WebUI\obj\Debug\net6.0\refint\WebUI.dll
 C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\WebUI\obj\Debug\net6.0\WebUI.pdb
 C:\Users\Enzo\Documents\GitHub\AGG-DDD\src\WebUI\obj\Debug\net6.0\ref\WebUI.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.csproj.AssemblyReference.cache
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.AssemblyInfoInputs.cache
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.AssemblyInfo.cs
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.csproj.CoreCompileInputs.cache
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Application.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Application.pdb
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\AutoMapper.dll
@@ -1126,6 +1132,7 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Sy
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XmlSerializer.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.XDocument.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Toolbelt.Blazor.HttpClientInterceptor.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\WebUI.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\WebUI.pdb
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\WindowsBase.dll
@@ -1155,6 +1162,7 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Sy
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Timer.dll.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.dll.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Microsoft.CSharp.dll.gz
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Toolbelt.Blazor.HttpClientInterceptor.dll.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\System.Private.DataContractSerialization.dll.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.TypeConverter.dll.gz
@@ -1398,6 +1406,7 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Microsoft.JSInterop.W
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\MudBlazor.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Toolbelt.Blazor.HttpClientInterceptor.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Microsoft.CSharp.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Microsoft.VisualBasic.Core.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Microsoft.VisualBasic.dll
@@ -1575,12 +1584,6 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Application.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Domain.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Application.pdb
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Domain.pdb
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.csproj.AssemblyReference.cache
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.AssemblyInfoInputs.cache
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.AssemblyInfo.cs
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.csproj.CoreCompileInputs.cache
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\XNpW3hKh.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\2ATf1PYX.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\Yw+NnM1V.gz
@@ -1624,6 +1627,7 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\gsQdY48M.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\KIRVubc2.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\15xY50+m.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\O9m7C95x.gz
+C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\5DP7yxhS.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\4XqztLLA.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\1SDYziKg.gz
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\MXXmcEfA.gz
@@ -1816,7 +1820,3 @@ C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\refint\WebUI.dll
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\WebUI.pdb
 C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\ref\WebUI.dll
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Toolbelt.Blazor.HttpClientInterceptor.dll
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\wwwroot\_framework\Toolbelt.Blazor.HttpClientInterceptor.dll.gz
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\bin\Debug\net6.0\Toolbelt.Blazor.HttpClientInterceptor.dll
-C:\Users\Enzo\RiderProjects\AGG\src\WebUI\obj\Debug\net6.0\build-gz\5DP7yxhS.gz

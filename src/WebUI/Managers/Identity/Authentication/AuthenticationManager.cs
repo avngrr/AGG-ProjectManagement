@@ -73,9 +73,11 @@ public class AuthenticationManager  : IAuthenticationManager
             var refreshContent = await refreshResult.Content.ReadAsStringAsync();
             var result = JsonSerializer.Deserialize<LoginResponse>(refreshContent, _options);
             if (!refreshResult.IsSuccessStatusCode)
+            {
+                await LogoutAsync();
                 return "";
+            }
             await _localStorage.SetItemAsync("authToken", result.Token);
-            
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", result.Token);
             return result.Token;
         }

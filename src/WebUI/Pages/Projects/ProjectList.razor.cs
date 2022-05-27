@@ -92,4 +92,9 @@ public partial class ProjectList
             await RefreshScreen();
         }
     }
+
+    private void OnRowClick(TableRowClickEventArgs<ProjectResponse> p)
+    {
+        _navigationManager.NavigateTo("/Projects/" + p.Item.Id);
+    }
 }

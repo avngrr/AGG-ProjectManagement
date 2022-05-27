@@ -13,8 +13,9 @@ public class AddEditTicketCommand : IRequest<Result<string>>
     public string Name { get; set; }
     public string Description { get; set; }
     public int ProjectId { get; set; }
-    public DateTime StartDate { get; set; } 
+    public DateTime? StartDate { get; set; } 
     public Priority Priority { get; set; } = Priority.MID;
+    public Status Status { get; set; } = Status.ToDo;
     public List<string> UserIds { get; set; } = new List<string>();
 }
 
@@ -43,10 +44,11 @@ internal class AddEditTicketCommandHandler : IRequestHandler<AddEditTicketComman
             var ticket = await _repository.GetByIdAsync(request.Id);
             ticket.Description = request.Description;
             ticket.Name = request.Name;
-            ticket.StartDate = request.StartDate;
+            ticket.StartDate = request.StartDate ?? DateTime.MinValue;
             ticket.Priority = request.Priority;
             ticket.UserIds = request.UserIds.SequenceEqual(ticket.UserIds) ? ticket.UserIds : request.UserIds;
             ticket.ProjectId = request.ProjectId;
+            ticket.Status = request.Status;
             await _repository.UpdateAsync(ticket);
             await _repository.Save();
             return Result.Ok("Updated ticket!");
