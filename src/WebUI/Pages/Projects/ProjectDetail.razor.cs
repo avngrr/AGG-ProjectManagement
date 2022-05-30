@@ -34,6 +34,11 @@ public partial class ProjectDetail
     private async Task ItemUpdated(MudItemDropInfo<TicketResponse> ticket)
     {
         ticket.Item.Status = (Status) Enum.Parse(typeof(Status), ticket.DropzoneIdentifier);
+        if (ticket.Item.Status == Status.Done)
+        {
+            await _ticketManager.CompleteAsync(ticket.Item.Id);
+            return;
+        } 
         var ticketToUpdate = new AddEditTicketCommand
         {
             Description = ticket.Item.Description,
@@ -52,17 +57,18 @@ public partial class ProjectDetail
         DialogParameters parameters = new DialogParameters();
         if (id != 0)
         {
-            TicketResponse p = _ticketList.FirstOrDefault(p => p.Id == id);
-            if (p is not null)
+            TicketResponse t = _ticketList.FirstOrDefault(t => t.Id == id);
+            if (t is not null)
             {
                 parameters.Add(nameof(AddEditTicketModal._editTicketCommand), new AddEditTicketCommand()
                 {
-                    Id = p.Id,
-                    Name = p.Name,
-                    Description = p.Description,
-                    StartDate = p.StartDate,
-                    Priority = p.Priority,
-                    UserIds = p.UserIds.ToList()
+                    Id = t.Id,
+                    Name = t.Name,
+                    Description = t.Description,
+                    StartDate = t.StartDate,
+                    Priority = t.Priority,
+                    DueDate = t.DueDate,
+                    UserIds = t.UserIds.ToList()
                 });
             }
         }
@@ -99,6 +105,26 @@ public partial class ProjectDetail
         if (result != DialogResult.Cancel())
         {
             await _ticketManager.DeleteAsync(id);
+            await RefreshProject();
+        }
+    }
+    private async Task ReOpenModal(int id)
+    {
+        DialogParameters parameters = new DialogParameters();
+        parameters.Add(nameof(DialogConfirmation.Color), Color.Primary);
+        parameters.Add(nameof(DialogConfirmation.ButtonText), "Submit");
+        parameters.Add(nameof(DialogConfirmation.ContentText), "Are you sure you want to reopen ticket?");
+        var dialog = _dialogService.Show<DialogConfirmation>("Reopen", parameters, new DialogOptions()
+        {
+            CloseButton = true,
+            MaxWidth = MaxWidth.Small,
+            FullScreen = false,
+            DisableBackdropClick = true
+        });
+        var result = await dialog.Result;
+        if (result != DialogResult.Cancel())
+        {
+            await _ticketManager.ReopenAsync(id);
             await RefreshProject();
         }
     }

@@ -35,7 +35,10 @@
             <MudTextField For="@(() => _editTicketCommand.Priority)" @bind-Value="_editTicketCommand.Priority" Label="Priority" />
         </MudItem>
         <MudItem xs="12" md="6">
-            <MudDatePicker For="@(() => _editTicketCommand.StartDate)" @bind-Date="_editTicketCommand.StartDate" Label="Startdate" />
+            <MudDatePicker For="@(() => _editTicketCommand.StartDate)" @bind-Date="_editTicketCommand.StartDate"  DateFormat="dd/MM/yyyy" Label="Startdate" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudDatePicker For="@(() => _editTicketCommand.DueDate)" @bind-Date="_editTicketCommand.DueDate"  DateFormat="dd/MM/yyyy" Label="Due date" />
         </MudItem>
     </DialogContent>
     <DialogActions>

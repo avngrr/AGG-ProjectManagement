@@ -1,7 +1,7 @@
 ﻿using Application.Identity.Commands;
 using Application.Identity.Responses;
 
-namespace Application.Common.Interfaces.Identity;
+namespace Application.Common.Interfaces.Services.Identity;
 
 public interface IAuthService
 {

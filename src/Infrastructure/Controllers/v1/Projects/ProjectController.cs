@@ -38,14 +38,14 @@ public class ProjectController : BaseController
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
-    [HttpPost("complete")]
+    [HttpPost("complete/{projectId}")]
     public async Task<IActionResult> CompleteProject(int projectId)
     {
         var result = await _mediator.Send(new CompleteProjectCommand(){ Id = projectId });
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
     [Authorize(Policy = Permissions.Projects.Edit)]
-    [HttpPost("reset")]
+    [HttpPost("reset/{projectId}")]
     public async Task<IActionResult> ResetProject(int projectId)
     {
         var result = await _mediator.Send(new ResetCompleteCommand(){ Id = projectId });

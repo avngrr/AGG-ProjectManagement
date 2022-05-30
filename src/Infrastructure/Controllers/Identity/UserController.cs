@@ -1,4 +1,4 @@
-﻿using Application.Common.Interfaces.Identity;
+﻿using Application.Common.Interfaces.Services.Identity;
 using Application.Common.Permissions;
 using Application.Identity.Commands;
 using Microsoft.AspNetCore.Authorization;

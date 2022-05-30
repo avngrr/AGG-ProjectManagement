@@ -11,6 +11,8 @@ public interface ITicketManager
     Task SaveAsync(AddEditTicketCommand command);
     Task<TicketResponse> GetByIdAsync(int ticketId);
     Task DeleteAsync(int ticketId);
+    Task CompleteAsync(int ticketId);
+    Task ReopenAsync(int ticketId);
 }
 
 public class TicketManager : ITicketManager
@@ -35,5 +37,14 @@ public class TicketManager : ITicketManager
     public async Task DeleteAsync(int ticketId)
     {
         var result = await _httpClient.DeleteAsync(TicketEndpoints.Delete(ticketId));
+    }
+    public async Task CompleteAsync(int ticketId)
+    {
+        var result = await _httpClient.PostAsync(TicketEndpoints.Complete(ticketId), null);
+    }
+
+    public async Task ReopenAsync(int ticketId)
+    {
+        var result = await _httpClient.PostAsync(TicketEndpoints.Reopen(ticketId), null);
     }
 }

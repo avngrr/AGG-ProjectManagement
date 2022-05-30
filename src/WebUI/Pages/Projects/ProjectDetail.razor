@@ -7,7 +7,7 @@
 <MudButton Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Add" Color="Color.Primary" @onclick="(() => AddEditModal())">Add</MudButton>
 @if (HasTickets)
 {
-    <MudDropContainer ItemDropped="ItemUpdated" T="TicketResponse" Items="_ticketList" ItemsSelector="@((response, s) => response.Status.ToString() == s)" Class="d-flex flex-row">
+    <MudDropContainer ItemIsDisabled="@( (response) => response.Status == Status.Done)" ItemDropped="ItemUpdated" T="TicketResponse" Items="_ticketList" ItemsSelector="@((response, s) => response.Status.ToString() == s)" Class="d-flex flex-row">
         <ChildContent>
             <MudPaper Class="pa-4 ma-4 d-flex flex-column mud-background-gray mud-width-full rounded-lg">
                 <MudToolBar DisableGutters="true">
@@ -66,32 +66,50 @@
             </MudPaper>
         </ChildContent>
         <ItemRenderer>
-            <MudCard>
+            <MudCard >
                 <MudCardHeader>
                     <CardHeaderContent>
                         <MudText Typo="Typo.body1">@context.Name</MudText>
                     </CardHeaderContent>
                     <CardHeaderActions>
                         <MudMenu Icon="@Icons.Material.Filled.MoreVert">
-                            <MudMenuItem OnClick="() => AddEditModal(context.Id)">Edit</MudMenuItem>
-                            <MudMenuItem OnClick="() => DeleteModal(context.Id)">Delete</MudMenuItem>
+                            @switch (context.Status)
+                            {
+                                case Status.ToDo:
+                                    <MudMenuItem OnClick="() => AddEditModal(context.Id)">Edit</MudMenuItem>
+                                    <MudMenuItem OnClick="() => DeleteModal(context.Id)">Delete</MudMenuItem>
+                                    break;
+                                case Status.InProgress:
+                                    <MudMenuItem OnClick="() => AddEditModal(context.Id)">Edit</MudMenuItem>
+                                    <MudMenuItem OnClick="() => DeleteModal(context.Id)">Delete</MudMenuItem>
+                                    break;
+                                case Status.InReview:
+                                    break;
+                                case Status.Done:
+                                    <MudMenuItem OnClick="() => ReOpenModal(context.Id)">Reopen</MudMenuItem>
+                                    break;
+                            }
                         </MudMenu>
                     </CardHeaderActions>
                 </MudCardHeader>
                 <MudCardContent>
                     <MudText Typo="Typo.body2">@context.Description</MudText>
-                    
+
                 </MudCardContent>
                 <MudCardActions>
                     <MudBadge Content="3" Overlap="true"><MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.AttachFile"></MudIconButton></MudBadge>
-                    <MudSpacer />
+                    <MudSpacer/>
                     @if (context.Status == Status.ToDo)
                     {
                         <MudText Typo="Typo.body2">Startdate @context.StartDate.ToString("D")</MudText>
                     }
                     @if (context.Status == Status.InProgress)
                     {
-                        <MudText Typo="Typo.body2">Due date @context.StartDate.ToString("D")</MudText>
+                        <MudText Typo="Typo.body2">Due date @context.DueDate.ToString("D")</MudText>
+                    }
+                    @if (context.Status == Status.Done)
+                    {
+                        <MudText Typo="Typo.body2">Completed date @context.CompletedDate.ToString("D")</MudText>
                     }
                 </MudCardActions>
             </MudCard>

@@ -52,6 +52,7 @@ public partial class ProjectList
                     Description = p.Description,
                     StartDate = p.StartDate,
                     ProjectManagerId = p.ProjectManagerId,
+                    DueDate = p.DueDate,
                     UserIds = p.UserIds.ToList()
                 });
             }

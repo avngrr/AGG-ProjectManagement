@@ -21,4 +21,11 @@
       <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Common\Interfaces\Services" />
+      <Folder Include="Utilities\Documents\Mappings" />
+      <Folder Include="Utilities\Documents\Queries" />
+      <Folder Include="Utilities\Documents\Validators" />
+    </ItemGroup>
+
 </Project>

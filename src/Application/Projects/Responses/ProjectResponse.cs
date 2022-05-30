@@ -10,6 +10,7 @@ public class ProjectResponse
     public string ProjectManagerId { get; set; }
     public UserResponse ProjectManager { get; set; }
     public DateTime StartDate { get; set; }
+    public DateTime? DueDate { get; set; }
     public DateTime? CompleteData { get; set; }
     public bool IsDeleted { get; set; }
     public IEnumerable<TicketResponse> Tickets { get; set; }

@@ -2,8 +2,8 @@
 using System.Reflection;
 using System.Security.Claims;
 using System.Text;
-using Application.Common.Interfaces.Identity;
 using Application.Common.Interfaces.Repository;
+using Application.Common.Interfaces.Services.Identity;
 using Application.Common.Permissions;
 using Infrastructure.Data;
 using Infrastructure.Models;

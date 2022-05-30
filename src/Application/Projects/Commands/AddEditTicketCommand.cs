@@ -13,7 +13,8 @@ public class AddEditTicketCommand : IRequest<Result<string>>
     public string Name { get; set; }
     public string Description { get; set; }
     public int ProjectId { get; set; }
-    public DateTime? StartDate { get; set; } 
+    public DateTime? StartDate { get; set; } = DateTime.Today;
+    public DateTime? DueDate { get; set; } = DateTime.Today;
     public Priority Priority { get; set; } = Priority.MID;
     public Status Status { get; set; } = Status.ToDo;
     public List<string> UserIds { get; set; } = new List<string>();
@@ -45,6 +46,7 @@ internal class AddEditTicketCommandHandler : IRequestHandler<AddEditTicketComman
             ticket.Description = request.Description;
             ticket.Name = request.Name;
             ticket.StartDate = request.StartDate ?? DateTime.MinValue;
+            ticket.DueDate = request.DueDate ?? DateTime.MinValue;
             ticket.Priority = request.Priority;
             ticket.UserIds = request.UserIds.SequenceEqual(ticket.UserIds) ? ticket.UserIds : request.UserIds;
             ticket.ProjectId = request.ProjectId;

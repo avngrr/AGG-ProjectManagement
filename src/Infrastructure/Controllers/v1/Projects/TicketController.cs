@@ -48,4 +48,18 @@ public class TicketController : BaseController
         var result = await _mediator.Send(new DeleteTicketCommand() { Id = ticketId });
         return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
     }
+    [Authorize(Policy = Permissions.Tickets.Edit)]
+    [HttpPost("complete")]
+    public async Task<IActionResult> CompleteTicket(int ticketId)
+    {
+        var result = await _mediator.Send(new CompleteTicketCommand(){ Id = ticketId });
+        return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
+    }
+    [Authorize(Policy = Permissions.Tickets.Edit)]
+    [HttpPost("reopen")]
+    public async Task<IActionResult> ReopenTicket(int ticketId)
+    {
+        var result = await _mediator.Send(new ReopenTicketCommand(){ Id = ticketId });
+        return result.IsSuccess ? Ok() : NotFound(result.Reasons[0]);
+    }
 }

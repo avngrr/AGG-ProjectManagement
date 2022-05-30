@@ -3,7 +3,7 @@ using Application.Projects.Responses;
 using AutoMapper;
 using Domain.Entities.Projects;
 
-namespace Application.Mappings.Projects;
+namespace Application.Projects.Mappings;
 
 public class ProjectMappings : Profile
 {

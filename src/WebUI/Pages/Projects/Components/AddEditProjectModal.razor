@@ -35,7 +35,10 @@
             <MudTextField For="@(() => _editProjectCommand.ProjectManagerId)" @bind-Value="_editProjectCommand.ProjectManagerId" Label="Projectmanager" />
         </MudItem>
         <MudItem xs="12" md="6">
-            <MudDatePicker For="@(() => _editProjectCommand.StartDate)" @bind-Date="_editProjectCommand.StartDate" Label="Startdate" />
+            <MudDatePicker For="@(() => _editProjectCommand.StartDate)" @bind-Date="_editProjectCommand.StartDate" DateFormat="dd/MM/yyyy" Label="Startdate" />
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudDatePicker For="@(() => _editProjectCommand.DueDate)" @bind-Date="_editProjectCommand.DueDate"  DateFormat="dd/MM/yyyy" Label="Due date" />
         </MudItem>
     </DialogContent>
     <DialogActions>

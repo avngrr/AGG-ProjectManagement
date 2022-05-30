@@ -2,7 +2,7 @@
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using Application.Common.Interfaces.Identity;
+using Application.Common.Interfaces.Services.Identity;
 using Application.Identity.Commands;
 using Application.Identity.Responses;
 using Infrastructure.Data;

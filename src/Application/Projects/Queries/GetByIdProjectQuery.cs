@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Application.Common.Interfaces.Identity;
 using Application.Common.Interfaces.Repository;
+using Application.Common.Interfaces.Services.Identity;
 using Application.Projects.Responses;
 using AutoMapper;
 using Domain.Entities.Projects;

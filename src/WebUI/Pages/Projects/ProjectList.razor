@@ -18,6 +18,7 @@
             <MudTh><MudTableSortLabel SortBy="new Func<ProjectResponse, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
             <MudTh><MudTableSortLabel SortBy="new Func<ProjectResponse, object>(x=>x.ProjectManager.UserName)">Projectmanager</MudTableSortLabel></MudTh>
             <MudTh><MudTableSortLabel SortBy="new Func<ProjectResponse, object>(x=>x.StartDate)">Startdate</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<ProjectResponse, object>(x=>x.DueDate)">Due date</MudTableSortLabel></MudTh>
             <MudTh>Actions</MudTh>
         </HeaderContent>
         <RowTemplate>
@@ -26,6 +27,7 @@
             <MudTd DataLabel="Description">@context.Description</MudTd>
             <MudTd DataLabel="Projectmanager">@context.ProjectManager?.UserName</MudTd>
             <MudTd DataLabel="Startdate">@context.StartDate</MudTd>
+            <MudTd DataLabel="Duedate">@context.DueDate</MudTd>
             <MudTd DataLabel="Actions">
                 <MudMenu Label="Actions" Variant="Variant.Filled" DisableElevation="true" EndIcon="@Icons.Filled.KeyboardArrowDown" IconColor="Color.Secondary" AnchorOrigin="Origin.BottomLeft">
                     <MudMenuItem @onclick="@(() => AddEditModal(@context.Id))">Edit</MudMenuItem> 

@@ -2,7 +2,7 @@
 using Application.Identity.Responses;
 using LanguageExt;
 
-namespace Application.Common.Interfaces.Identity;
+namespace Application.Common.Interfaces.Services.Identity;
 
 public interface IUserService
 {

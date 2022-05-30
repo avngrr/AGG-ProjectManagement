@@ -1,5 +1,5 @@
-﻿using Application.Common.Interfaces.Identity;
-using Application.Common.Interfaces.Repository;
+﻿using Application.Common.Interfaces.Repository;
+using Application.Common.Interfaces.Services.Identity;
 using Application.Identity.Responses;
 using Application.Projects.Responses;
 using AutoMapper;
