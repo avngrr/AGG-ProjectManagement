@@ -19,6 +19,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter()
     .AddAuthorizationPermissions()
     .AddVersioning()
     .AddControllersWithViews();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: "_myAllowSpecificOrigins",
@@ -26,7 +27,7 @@ builder.Services.AddCors(options =>
         {
             b.WithOrigins("https://10.10.10.23:44306",
                     "https://10.10.10.23:7019",
-                    "https://localhost:44306", 
+                    "https://localhost:44306",
                     "https://localhost:7019")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
@@ -37,6 +38,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseWebAssemblyDebugging();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -50,6 +52,8 @@ app.UseCors("_myAllowSpecificOrigins");
 
 app.UseAuthorization();
 app.UseAuthentication();
+
 app.MapControllers();
+app.MapFallbackToFile("index.html");
 app.Run();
 public partial class Program { }

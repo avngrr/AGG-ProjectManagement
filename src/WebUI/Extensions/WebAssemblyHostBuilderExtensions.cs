@@ -34,7 +34,7 @@ public static class WebAssemblyHostBuilderExtensions
             .AddScoped<HttpInterceptorService>()
             .AddScoped(sp =>
                 sp.GetRequiredService<IHttpClientFactory>().CreateClient("Infrastructure").EnableIntercept(sp))
-            .AddHttpClient("Infrastructure", client => client.BaseAddress = new Uri("https://localhost:7010"))
+            .AddHttpClient("Infrastructure", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress))
             .AddHttpMessageHandler<AuthenticationHeaderHandler>();
         builder.Services.AddHttpClientInterceptor();
 

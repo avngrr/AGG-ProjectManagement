@@ -1,0 +1,1646 @@
+{
+  "ContentRoots": [
+    "/root/.nuget/fallbackpackages/mudblazor/6.0.10/staticwebassets/",
+    "/root/.nuget/fallbackpackages/microsoft.aspnetcore.components.webassembly.authentication/6.0.4/staticwebassets/",
+    "/root/.nuget/fallbackpackages/microsoft.aspnetcore.identity.ui/6.0.5/staticwebassets/V5/",
+    "/src/src/WebUI/bin/Debug/net6.0/wwwroot/",
+    "/src/src/WebUI/obj/Debug/net6.0/scopedcss/bundle/",
+    "/src/src/WebUI/wwwroot/"
+  ],
+  "Root": {
+    "Children": {
+      "_content": {
+        "Children": {
+          "MudBlazor": {
+            "Children": {
+              "MudBlazor.min.css": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "MudBlazor.min.css"
+                },
+                "Patterns": null
+              },
+              "MudBlazor.min.js": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "MudBlazor.min.js"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+            "Children": {
+              "AuthenticationService.js": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 1,
+                  "SubPath": "AuthenticationService.js"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "Identity": {
+        "Children": {
+          "css": {
+            "Children": {
+              "site.css": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 2,
+                  "SubPath": "css/site.css"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "favicon.ico": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 2,
+              "SubPath": "favicon.ico"
+            },
+            "Patterns": null
+          },
+          "js": {
+            "Children": {
+              "site.js": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 2,
+                  "SubPath": "js/site.js"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "lib": {
+            "Children": {
+              "bootstrap": {
+                "Children": {
+                  "dist": {
+                    "Children": {
+                      "css": {
+                        "Children": {
+                          "bootstrap-grid.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-grid.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-grid.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-grid.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-grid.rtl.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-grid.rtl.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-grid.rtl.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-grid.rtl.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.rtl.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.rtl.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.rtl.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-reboot.rtl.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.rtl.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.rtl.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.rtl.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap-utilities.rtl.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.min.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.rtl.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.rtl.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.rtl.min.css": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.rtl.min.css.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+                            },
+                            "Patterns": null
+                          }
+                        },
+                        "Asset": null,
+                        "Patterns": null
+                      },
+                      "js": {
+                        "Children": {
+                          "bootstrap.bundle.js": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.js"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.bundle.js.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.bundle.min.js": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.bundle.min.js.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.esm.js": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.js"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.esm.js.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.esm.min.js": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.min.js"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.esm.min.js.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.js": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.js"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.js.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.js.map"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.min.js": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.min.js"
+                            },
+                            "Patterns": null
+                          },
+                          "bootstrap.min.js.map": {
+                            "Children": null,
+                            "Asset": {
+                              "ContentRootIndex": 2,
+                              "SubPath": "lib/bootstrap/dist/js/bootstrap.min.js.map"
+                            },
+                            "Patterns": null
+                          }
+                        },
+                        "Asset": null,
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  },
+                  "LICENSE": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "lib/bootstrap/LICENSE"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "jquery-validation-unobtrusive": {
+                "Children": {
+                  "jquery.validate.unobtrusive.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+                    },
+                    "Patterns": null
+                  },
+                  "jquery.validate.unobtrusive.min.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+                    },
+                    "Patterns": null
+                  },
+                  "LICENSE.txt": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "lib/jquery-validation-unobtrusive/LICENSE.txt"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "jquery-validation": {
+                "Children": {
+                  "dist": {
+                    "Children": {
+                      "additional-methods.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 2,
+                          "SubPath": "lib/jquery-validation/dist/additional-methods.js"
+                        },
+                        "Patterns": null
+                      },
+                      "additional-methods.min.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 2,
+                          "SubPath": "lib/jquery-validation/dist/additional-methods.min.js"
+                        },
+                        "Patterns": null
+                      },
+                      "jquery.validate.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 2,
+                          "SubPath": "lib/jquery-validation/dist/jquery.validate.js"
+                        },
+                        "Patterns": null
+                      },
+                      "jquery.validate.min.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 2,
+                          "SubPath": "lib/jquery-validation/dist/jquery.validate.min.js"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  },
+                  "LICENSE.md": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "lib/jquery-validation/LICENSE.md"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "jquery": {
+                "Children": {
+                  "dist": {
+                    "Children": {
+                      "jquery.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 2,
+                          "SubPath": "lib/jquery/dist/jquery.js"
+                        },
+                        "Patterns": null
+                      },
+                      "jquery.min.js": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 2,
+                          "SubPath": "lib/jquery/dist/jquery.min.js"
+                        },
+                        "Patterns": null
+                      },
+                      "jquery.min.map": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 2,
+                          "SubPath": "lib/jquery/dist/jquery.min.map"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  },
+                  "LICENSE.txt": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 2,
+                      "SubPath": "lib/jquery/LICENSE.txt"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "_framework": {
+        "Children": {
+          "Application.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Application.dll"
+            },
+            "Patterns": null
+          },
+          "Application.pdb": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Application.pdb"
+            },
+            "Patterns": null
+          },
+          "AutoMapper.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/AutoMapper.dll"
+            },
+            "Patterns": null
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+            },
+            "Patterns": null
+          },
+          "blazor.boot.json": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/blazor.boot.json"
+            },
+            "Patterns": null
+          },
+          "blazor.webassembly.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/blazor.webassembly.js"
+            },
+            "Patterns": null
+          },
+          "Blazored.FluentValidation.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Blazored.FluentValidation.dll"
+            },
+            "Patterns": null
+          },
+          "Blazored.LocalStorage.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Blazored.LocalStorage.dll"
+            },
+            "Patterns": null
+          },
+          "Domain.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Domain.dll"
+            },
+            "Patterns": null
+          },
+          "Domain.pdb": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Domain.pdb"
+            },
+            "Patterns": null
+          },
+          "FluentResults.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/FluentResults.dll"
+            },
+            "Patterns": null
+          },
+          "FluentValidation.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/FluentValidation.dll"
+            },
+            "Patterns": null
+          },
+          "LanguageExt.Core.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/LanguageExt.Core.dll"
+            },
+            "Patterns": null
+          },
+          "MediatR.Contracts.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MediatR.Contracts.dll"
+            },
+            "Patterns": null
+          },
+          "MediatR.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MediatR.dll"
+            },
+            "Patterns": null
+          },
+          "MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MediatR.Extensions.Microsoft.DependencyInjection.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Authorization.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Authorization.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.Authorization.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.Forms.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.Forms.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.Web.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.Web.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.WebAssembly.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Metadata.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Metadata.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Bcl.AsyncInterfaces.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Bcl.AsyncInterfaces.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.EntityFrameworkCore.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.EntityFrameworkCore.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Caching.Abstractions.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Caching.Memory.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Caching.Memory.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.Binder.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.Binder.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.FileExtensions.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.Json.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.Json.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.DependencyInjection.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.FileProviders.Abstractions.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.FileProviders.Physical.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.FileProviders.Physical.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.FileSystemGlobbing.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Http.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Http.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Logging.Abstractions.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Logging.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Logging.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Options.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Options.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Primitives.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Primitives.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.JSInterop.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.JSInterop.dll"
+            },
+            "Patterns": null
+          },
+          "Microsoft.JSInterop.WebAssembly.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.JSInterop.WebAssembly.dll"
+            },
+            "Patterns": null
+          },
+          "MudBlazor.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MudBlazor.dll"
+            },
+            "Patterns": null
+          },
+          "Newtonsoft.Json.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Newtonsoft.Json.dll"
+            },
+            "Patterns": null
+          },
+          "System.IO.Pipelines.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/System.IO.Pipelines.dll"
+            },
+            "Patterns": null
+          },
+          "Toolbelt.Blazor.HttpClientInterceptor.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Toolbelt.Blazor.HttpClientInterceptor.dll"
+            },
+            "Patterns": null
+          },
+          "WebUI.dll": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/WebUI.dll"
+            },
+            "Patterns": null
+          },
+          "WebUI.pdb": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/WebUI.pdb"
+            },
+            "Patterns": null
+          },
+          "Microsoft.EntityFrameworkCore.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.Forms.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
+          "MediatR.Contracts.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MediatR.Contracts.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Newtonsoft.Json.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Newtonsoft.Json.dll.gz"
+            },
+            "Patterns": null
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/AutoMapper.Extensions.Microsoft.DependencyInjection.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.EntityFrameworkCore.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.EntityFrameworkCore.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Toolbelt.Blazor.HttpClientInterceptor.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Toolbelt.Blazor.HttpClientInterceptor.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.FileProviders.Physical.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.FileProviders.Physical.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.FileSystemGlobbing.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.FileSystemGlobbing.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Caching.Memory.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Logging.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Logging.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Application.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Application.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.FileExtensions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.FileExtensions.dll.gz"
+            },
+            "Patterns": null
+          },
+          "WebUI.pdb.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/WebUI.pdb.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.WebAssembly.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Metadata.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.JSInterop.WebAssembly.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Domain.pdb.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Domain.pdb.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Authorization.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz"
+            },
+            "Patterns": null
+          },
+          "MediatR.Extensions.Microsoft.DependencyInjection.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MediatR.Extensions.Microsoft.DependencyInjection.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Logging.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
+          "FluentResults.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/FluentResults.dll.gz"
+            },
+            "Patterns": null
+          },
+          "MudBlazor.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MudBlazor.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Domain.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Domain.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Primitives.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Primitives.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.Json.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.Json.dll.gz"
+            },
+            "Patterns": null
+          },
+          "System.IO.Pipelines.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/System.IO.Pipelines.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Options.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Options.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Bcl.AsyncInterfaces.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Bcl.AsyncInterfaces.dll.gz"
+            },
+            "Patterns": null
+          },
+          "LanguageExt.Core.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/LanguageExt.Core.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Caching.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Application.pdb.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Application.pdb.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.Binder.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.Binder.dll.gz"
+            },
+            "Patterns": null
+          },
+          "FluentValidation.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/FluentValidation.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.Web.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.AspNetCore.Components.Authorization.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.JSInterop.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.JSInterop.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.DependencyInjection.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz"
+            },
+            "Patterns": null
+          },
+          "blazor.webassembly.js.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/blazor.webassembly.js.gz"
+            },
+            "Patterns": null
+          },
+          "AutoMapper.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/AutoMapper.dll.gz"
+            },
+            "Patterns": null
+          },
+          "WebUI.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/WebUI.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.FileProviders.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.FileProviders.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Blazored.FluentValidation.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Blazored.FluentValidation.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Blazored.LocalStorage.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Blazored.LocalStorage.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
+          "MediatR.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/MediatR.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Http.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 3,
+              "SubPath": "_framework/Microsoft.Extensions.Http.dll.gz"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "WebUI.styles.css": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 4,
+          "SubPath": "WebUI.styles.css"
+        },
+        "Patterns": null
+      },
+      "appsettings.Development.json": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 5,
+          "SubPath": "appsettings.Development.json"
+        },
+        "Patterns": null
+      },
+      "appsettings.json": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 5,
+          "SubPath": "appsettings.json"
+        },
+        "Patterns": null
+      },
+      "css": {
+        "Children": {
+          "app.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 5,
+              "SubPath": "css/app.css"
+            },
+            "Patterns": null
+          },
+          "bootstrap": {
+            "Children": {
+              "bootstrap.min.css": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 5,
+                  "SubPath": "css/bootstrap/bootstrap.min.css"
+                },
+                "Patterns": null
+              },
+              "bootstrap.min.css.map": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 5,
+                  "SubPath": "css/bootstrap/bootstrap.min.css.map"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "open-iconic": {
+            "Children": {
+              "FONT-LICENSE": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 5,
+                  "SubPath": "css/open-iconic/FONT-LICENSE"
+                },
+                "Patterns": null
+              },
+              "font": {
+                "Children": {
+                  "css": {
+                    "Children": {
+                      "open-iconic-bootstrap.min.css": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 5,
+                          "SubPath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  },
+                  "fonts": {
+                    "Children": {
+                      "open-iconic.eot": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 5,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.eot"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.otf": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 5,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.otf"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.svg": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 5,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.svg"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.ttf": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 5,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.ttf"
+                        },
+                        "Patterns": null
+                      },
+                      "open-iconic.woff": {
+                        "Children": null,
+                        "Asset": {
+                          "ContentRootIndex": 5,
+                          "SubPath": "css/open-iconic/font/fonts/open-iconic.woff"
+                        },
+                        "Patterns": null
+                      }
+                    },
+                    "Asset": null,
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "ICON-LICENSE": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 5,
+                  "SubPath": "css/open-iconic/ICON-LICENSE"
+                },
+                "Patterns": null
+              },
+              "README.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 5,
+                  "SubPath": "css/open-iconic/README.md"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "favicon.ico": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 5,
+          "SubPath": "favicon.ico"
+        },
+        "Patterns": null
+      },
+      "icon-192.png": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 5,
+          "SubPath": "icon-192.png"
+        },
+        "Patterns": null
+      },
+      "index.html": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 5,
+          "SubPath": "index.html"
+        },
+        "Patterns": null
+      },
+      "sample-data": {
+        "Children": {
+          "weather.json": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 5,
+              "SubPath": "sample-data/weather.json"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [
+      {
+        "ContentRootIndex": 5,
+        "Pattern": "**",
+        "Depth": 0
+      }
+    ]
+  }
+}

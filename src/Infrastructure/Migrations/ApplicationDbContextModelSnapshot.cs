@@ -85,6 +85,9 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("DueDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -136,7 +139,7 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DueDate")
+                    b.Property<DateTime?>("DueDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LastModifiedBy")
@@ -409,16 +412,16 @@ namespace Infrastructure.Migrations
                         {
                             Id = "0b700e63-780c-488a-bd56-de61403d5a0f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1a1d1340-9b7a-4856-9adb-40fb69c3c230",
+                            ConcurrencyStamp = "01a7d7cd-a324-4691-9fb1-2bdf9b590ab3",
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
                             IsActive = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "Admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOmSy/G6YquSPM9ys+2aaHrzR74NB030pMst5nmNc8NT0NoseEj0WDvK7Uc0Hnq8ag==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPDn7YNvTeBXln+Rp/bKnrdZEOGMXUdS2UrCsbAaIbBbqEz+7CyPGxIhKsYk0K+UUw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5dacef09-6451-428c-ba21-1ec5cfaff567",
+                            SecurityStamp = "7bd4ebf5-c503-4edd-9851-20000586f338",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
